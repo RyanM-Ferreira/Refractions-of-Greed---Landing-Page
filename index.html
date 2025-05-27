@@ -19,6 +19,9 @@
         <li><a href="">Download</a></li>
     </ul>
 
+    <button onclick="incrementar()">Clique aqui!</button>
+    <h1>Contador: <span id="contador">0</span></h1>
+
     <div>
         <div>
             <h1>Refractions of Greed</h1>
@@ -48,6 +51,15 @@
     </div>
 
     <footer>© Refractions of Greed - 2025</footer>
+
+    <script>
+        let contador = 0;
+
+        function incrementar() {
+            contador++;
+            document.getElementById('contador').innerText = contador;
+        }
+    </script>
 </body>
 
 </html>
