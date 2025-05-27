@@ -1,20 +1,27 @@
-:root {
-    defaultPadding: 16;
+  :root {
+      --defaultPadding: 16px;
+      --backgroundColor: #211A4E;
+      --highlightColor: #6470EF;
+      --buttonBRadius: 8px;
+  }
 
-    highlightColor: #6470EF;
-}
+  @font-face {
+      font-family: 'dogicaPixelFont';
+      src: url('fonts/dogicapixel.ttf');
+  }
 
-@font-face {
-    font-family: 'dogicaPixelFont';
-    src: url('fonts/dogicapixel.ttf');
-}
+  * {
+      font-family: 'dogicaPixelFont';
+      color: white;
+  }
 
-* {
-    font-family: 'dogicaPixelFont';
-    color: white;
-}
+  button {
+      background-color: var(--highlightColor);
+      padding: var(--defaultPadding);
+      border-radius: var(--buttonBRadius);
+      border-style: none;
+  }
 
-button {
-    background-color: var(highlightColor);
-    padding: var(defaultPadding);
-}
+  body {
+      background-color: var(--backgroundColor);
+  }
