@@ -1,3 +1,9 @@
+:root {
+    defaultPadding: 16;
+
+    highlightColor: #6470EF;
+}
+
 @font-face {
     font-family: 'dogicaPixelFont';
     src: url('fonts/dogicapixel.ttf');
@@ -5,4 +11,10 @@
 
 * {
     font-family: 'dogicaPixelFont';
+    color: white;
+}
+
+button {
+    background-color: var(highlightColor);
+    padding: var(defaultPadding);
 }

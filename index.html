@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link rel="stylesheet" href="stylesGlobal.css">
+    <link rel="stylesheet" href="styles/homeStyles.css">
 
+    <link rel="stylesheet" href="stylesGlobal.css">
+    <script src="scriptsGlobal.js"></script>
 </head>
 
 <body>
@@ -19,12 +21,12 @@
         <li><a href="">Download</a></li>
     </ul>
 
-    <button onclick="incrementar()">Clique aqui!</button>
-    <h1>Contador: <span id="contador">0</span></h1>
-
     <div>
         <div>
             <h1>Refractions of Greed</h1>
+            
+            <button type="button">Sobre</button>
+            <button type="button">Download</button>
         </div>
 
         <div>
@@ -51,15 +53,6 @@
     </div>
 
     <footer>© Refractions of Greed - 2025</footer>
-
-    <script>
-        let contador = 0;
-
-        function incrementar() {
-            contador++;
-            document.getElementById('contador').innerText = contador;
-        }
-    </script>
 </body>
 
 </html>
