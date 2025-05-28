@@ -23,6 +23,15 @@ div.mechanics {
     margin: auto;
 }
 
+/*
+div.aboutGame {
+    background-image: url(../assets/home/arch.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+*/
+
 div.aboutProject {
     text-align: right;
 }
@@ -30,13 +39,12 @@ div.aboutProject {
 div.textToImage {
     padding: 0;
     display: flex;
-
+    justify-content: space-between;
     align-items: center;
 }
 
 img {
-    margin: 32px;
-    height: 150px;
+    height: 200px;
     border-radius: var(--uiBorderRadius);
 }
 
@@ -44,6 +52,7 @@ img.titleLogo {
     margin: auto;
     max-width: 70%;
     height: auto;
+    object-fit: contain;
 }
 
 .mainButtons button {
@@ -73,7 +82,7 @@ img.titleLogo {
     }
 
     .mainButtons button {
-        width: 40%;
+        width: 47%;
     }
 }
 
@@ -91,10 +100,4 @@ img.titleLogo {
         padding: 10px;
     }
 
-    ul.nav {
-        display: grid;
-        margin: 0;
-        padding: 0;
-        overflow-wrap: break-word;
-    }
 }

@@ -1,13 +1,11 @@
   :root {
       --backgroundColor: #211A4E;
       --highlightColor: #4856ee;
+      --mainBackground: white;
 
       --defaultPadding: 20px;
       --buttonBorderRadius: 8px;
       --uiBorderRadius: 12px;
-
-      --mainBackground: white;
-
       --borderSize: 3px;
   }
 
@@ -26,6 +24,12 @@
       color: white;
       line-height: 1.5;
   }
+
+  html,
+  body {
+      height: 100%;
+  }
+
 
   button {
       background-color: var(--highlightColor);
@@ -70,10 +74,10 @@
       width: auto;
       padding: 5px;
 
-
       right: 0;
       position: absolute;
   }
+
 
   li a.nav {
       text-decoration: none;
@@ -82,7 +86,11 @@
       padding: var(--defaultPadding);
   }
 
-  @media (max-width: 700px) {}
+  @media (max-width: 700px) {
+      ul.nav {
+          display: none;
+      }
+  }
 
   a.navDownload {
       background-color: var(--highlightColor);
@@ -100,6 +108,8 @@
       text-align: center;
   }
 
+
+  /* ScrollBar */
   ::-webkit-scrollbar {
       width: 8px;
   }
@@ -107,4 +117,53 @@
   ::-webkit-scrollbar-thumb {
       background: var(--highlightColor);
       border-radius: 10px;
+  }
+
+  /* SideMenu */
+  .sidenav {
+      display: none;
+      height: 100%;
+      width: 0px;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      right: 0;
+      background-color: #111;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+  }
+
+  .sidenav a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+  }
+
+  .sidenav a:hover {
+      color: #f1f1f1;
+  }
+
+  .sidenav .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+  }
+
+  .menuIcon {
+      position: fixed;
+      right: 15px;
+      top: 0;
+      display: none;
+  }
+
+  @media screen and (max-width: 768px) {
+      .menuIcon {
+          display: block;
+      }
   }
