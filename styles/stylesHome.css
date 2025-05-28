@@ -2,17 +2,18 @@ div {
     padding: var(--defaultPadding);
 }
 
+div.main {
+    padding: 0;
+}
+
 div.title {
-    margin: 0;
+    padding: 0;
     text-align: center;
-    height: 70vh;
+    height: 90vh;
     background-image: url(../assets/home/montain.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
 div.aboutGame,
@@ -29,7 +30,7 @@ div.aboutProject {
 div.textToImage {
     padding: 0;
     display: flex;
-  
+
     align-items: center;
 }
 
@@ -39,7 +40,18 @@ img {
     border-radius: var(--uiBorderRadius);
 }
 
-/* Responsividade para telas menores */
+img.titleLogo {
+    margin: auto;
+    max-width: 70%;
+    height: auto;
+}
+
+.mainButtons button {
+    margin: 0;
+    width: 15%;
+}
+
+/* Responsividade para telas menores (ou tentativa)*/
 @media (max-width: 900px) {
 
     div.aboutGame,
@@ -57,8 +69,11 @@ img {
         margin: 16px 0;
         width: 100%;
         height: auto;
-        max-width: 350px;
         align-self: center;
+    }
+
+    .mainButtons button {
+        width: 40%;
     }
 }
 

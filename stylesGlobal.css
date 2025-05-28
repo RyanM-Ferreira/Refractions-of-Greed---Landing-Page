@@ -1,6 +1,6 @@
   :root {
       --backgroundColor: #211A4E;
-      --highlightColor: #6470EF;
+      --highlightColor: #4856ee;
 
       --defaultPadding: 20px;
       --buttonBorderRadius: 8px;
@@ -14,6 +14,11 @@
   @font-face {
       font-family: 'dogicaPixelFont';
       src: url('fonts/dogicapixel.ttf');
+  }
+
+  @font-face {
+      font-family: 'dogicaPixelBoldFont';
+      src: url('fonts/dogicapixelbold.ttf');
   }
 
   * {
@@ -33,6 +38,12 @@
       outline: 3px solid var(--highlightColor);
       outline-offset: -3px;
       background: none;
+      color: var(--highlightColor);
+      font-family: 'dogicaPixelBoldFont';
+  }
+
+  h1 {
+      font-family: 'dogicaPixelBoldFont';
   }
 
   body {
@@ -54,13 +65,14 @@
       list-style: none;
       background-color: white;
       border-radius: var(--uiBorderRadius);
-      display: inline-flex;
+      display: flex;
 
       width: auto;
       padding: 5px;
 
-      float: right;
-      top: 0;
+
+      right: 0;
+      position: absolute;
   }
 
   li a.nav {
@@ -70,14 +82,13 @@
       padding: var(--defaultPadding);
   }
 
-  @media (max-width: 700px) {
-  
-  }
+  @media (max-width: 700px) {}
 
   a.navDownload {
       background-color: var(--highlightColor);
       padding: var(--buttonBorderRadius);
       border-radius: var(--buttonBorderRadius);
+      margin-right: -5px;
   }
 
   footer {
