@@ -1,8 +1,14 @@
   :root {
-      --defaultPadding: 16px;
       --backgroundColor: #211A4E;
       --highlightColor: #6470EF;
-      --buttonBRadius: 8px;
+
+      --defaultPadding: 20px;
+      --buttonBorderRadius: 8px;
+      --uiBorderRadius: 12px;
+
+      --mainBackground: white;
+
+      --borderSize: 3px;
   }
 
   @font-face {
@@ -13,15 +19,81 @@
   * {
       font-family: 'dogicaPixelFont';
       color: white;
+      line-height: 1.5;
   }
 
   button {
       background-color: var(--highlightColor);
       padding: var(--defaultPadding);
-      border-radius: var(--buttonBRadius);
+      border-radius: var(--buttonBorderRadius);
       border-style: none;
+  }
+
+  button.alternative {
+      outline: 3px solid var(--highlightColor);
+      outline-offset: -3px;
+      background: none;
   }
 
   body {
       background-color: var(--backgroundColor);
+      margin: 0;
+      padding: 0;
+  }
+
+  p {
+      text-align: justify;
+  }
+
+  div.main {
+      display: inline-table;
+  }
+
+  /* NavBar */
+  ul.nav {
+      list-style: none;
+      background-color: white;
+      border-radius: var(--uiBorderRadius);
+      display: inline-flex;
+
+      width: auto;
+      padding: 5px;
+
+      float: right;
+      top: 0;
+  }
+
+  li a.nav {
+      text-decoration: none;
+      color: black;
+      font-size: small;
+      padding: var(--defaultPadding);
+  }
+
+  @media (max-width: 700px) {
+  
+  }
+
+  a.navDownload {
+      background-color: var(--highlightColor);
+      padding: var(--buttonBorderRadius);
+      border-radius: var(--buttonBorderRadius);
+  }
+
+  footer {
+      background-color: var(--mainBackground);
+      margin: 0;
+      padding: var(--defaultPadding);
+      color: black;
+      font-size: smaller;
+      text-align: center;
+  }
+
+  ::-webkit-scrollbar {
+      width: 8px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+      background: var(--highlightColor);
+      border-radius: 10px;
   }

@@ -1,0 +1,85 @@
+div {
+    padding: var(--defaultPadding);
+}
+
+div.title {
+    margin: 0;
+    text-align: center;
+    height: 70vh;
+    background-image: url(../assets/home/montain.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+div.aboutGame,
+div.aboutProject,
+div.mechanics {
+    width: 60%;
+    margin: auto;
+}
+
+div.aboutProject {
+    text-align: right;
+}
+
+div.textToImage {
+    padding: 0;
+    display: flex;
+  
+    align-items: center;
+}
+
+img {
+    margin: 32px;
+    height: 150px;
+    border-radius: var(--uiBorderRadius);
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 900px) {
+
+    div.aboutGame,
+    div.aboutProject,
+    div.mechanics {
+        width: 90%;
+    }
+
+    div.textToImage {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    img {
+        margin: 16px 0;
+        width: 100%;
+        height: auto;
+        max-width: 350px;
+        align-self: center;
+    }
+}
+
+@media (max-width: 600px) {
+    div.title {
+        height: auto;
+        padding: 40px 10px;
+        background-size: cover;
+    }
+
+    div.aboutGame,
+    div.aboutProject,
+    div.mechanics {
+        width: 90%;
+        padding: 10px;
+    }
+
+    ul.nav {
+        display: grid;
+        margin: 0;
+        padding: 0;
+        overflow-wrap: break-word;
+    }
+}
