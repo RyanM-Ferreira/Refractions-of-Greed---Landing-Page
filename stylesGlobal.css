@@ -32,8 +32,8 @@
       height: 100%;
   }
 
-
   button {
+      transition: filter 0.3s ease;
       background-color: var(--highlightColor);
       padding: var(--defaultPadding);
       border-radius: var(--buttonBorderRadius);
@@ -41,8 +41,8 @@
   }
 
   button.alternative {
-      outline: 3px solid var(--highlightColor);
-      outline-offset: -3px;
+      outline: 4px solid var(--highlightColor);
+      outline-offset: -4px;
       background: none;
       color: var(--highlightColor);
       font-family: 'dogicaPixelBoldFont';
@@ -72,14 +72,10 @@
       background-color: white;
       border-radius: var(--uiBorderRadius);
       display: flex;
-
-      width: auto;
       padding: 5px;
-
       right: 0;
-      position: absolute;
+      position: fixed;
   }
-
 
   li a.nav {
       text-decoration: none;
@@ -96,9 +92,21 @@
 
   a.navDownload {
       background-color: var(--highlightColor);
-      padding: var(--buttonBorderRadius);
       border-radius: var(--buttonBorderRadius);
       margin-right: -5px;
+      color: white;
+      text-decoration: none;
+      padding: var(--defaultPadding);
+  }
+
+  .nav a:hover {
+      filter: brightness(50%);
+      color: pink;
+  }
+
+  button:hover {
+      filter: brightness(50%);
+      color: pink;
   }
 
   footer {
@@ -110,7 +118,6 @@
       text-align: center;
   }
 
-
   /* ScrollBar */
   ::-webkit-scrollbar {
       width: 8px;
@@ -119,42 +126,6 @@
   ::-webkit-scrollbar-thumb {
       background: var(--highlightColor);
       border-radius: 10px;
-  }
-
-  /* SideMenu */
-  .sidenav {
-      display: none;
-      height: 100%;
-      width: 0px;
-      position: fixed;
-      z-index: 1;
-      top: 0;
-      right: 0;
-      background-color: #111;
-      overflow-x: hidden;
-      transition: 0.5s;
-      padding-top: 60px;
-  }
-
-  .sidenav a {
-      padding: 8px 8px 8px 32px;
-      text-decoration: none;
-      font-size: 25px;
-      color: #818181;
-      display: block;
-      transition: 0.3s;
-  }
-
-  .sidenav a:hover {
-      color: #f1f1f1;
-  }
-
-  .sidenav .closebtn {
-      position: absolute;
-      top: 0;
-      right: 25px;
-      font-size: 36px;
-      margin-left: 50px;
   }
 
   .menuIcon {
@@ -167,8 +138,55 @@
       cursor: pointer;
   }
 
-  @media screen and (max-width: 720px) {
+  @media (max-width: 1280px) {
       .menuIcon {
           display: block;
+      }
+
+      ul.nav {
+          margin: 0;
+          height: 100%;
+          width: 0px;
+          position: fixed;
+          z-index: 1;
+          top: 0;
+          right: 0;
+          background-color: #111;
+          overflow-x: hidden;
+          transition: 0.5s;
+          padding-top: 60px;
+          display: block;
+          border-radius: 0;
+          text-align: center;
+      }
+
+      .nav a.navDownload {
+          padding: 8px;
+      }
+
+      .nav a {
+          padding: 8px;
+      }
+
+      .nav li a {
+          color: white;
+          font-size: medium;
+      }
+
+      .nav li {
+          margin: 8px;
+
+      }
+
+      .nav .closebtn {
+          position: absolute;
+          top: 0;
+          right: 25px;
+          font-size: 36px;
+          margin-left: 50px;
+      }
+
+      .nav a:hover {
+          color: #f1f1f1;
       }
   }

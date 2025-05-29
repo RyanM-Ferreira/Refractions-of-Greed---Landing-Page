@@ -1,0 +1,83 @@
+div.downloadMain {
+    min-height: 80vh;
+    padding: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.downloadMain h1 {
+    color: var(--highlightColor2);
+    margin-bottom: 24px;
+    font-family: 'dogicaPixelBoldFont';
+    letter-spacing: 2px;
+}
+
+.downloadBox {
+    background: rgba(34, 26, 78, 0.95);
+    border-radius: var(--uiBorderRadius);
+    box-shadow: 0 4px 24px #0008;
+    padding: 40px 32px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+
+}
+
+.downloadBox h2 {
+    color: var(--highlightColor);
+    margin-bottom: 16px;
+    font-size: 1.2em;
+}
+
+.downloadBox p {
+    margin-bottom: 32px;
+    color: #fff;
+}
+
+.downloadBtn {
+    background: linear-gradient(90deg, var(--highlightColor), var(--highlightColor2));
+    color: #fff;
+    font-family: 'dogicaPixelBoldFont';
+    margin-bottom: 32px;
+    cursor: pointer;
+    transition: filter 0.2s;
+}
+
+.downloadBtn:hover {
+    filter: brightness(80%);
+}
+
+.requisitos {
+    background: #18123a;
+    border-radius: 8px;
+    padding: 16px;
+    margin-top: 16px;
+    color: #fff;
+    font-size: 0.95em;
+    text-align: left;
+}
+
+.requisitos h3 {
+    color: var(--highlightColor2);
+    margin-bottom: 8px;
+    font-size: 1em;
+}
+
+.requisitos ul {
+    margin: 0;
+    padding-left: 18px;
+}
+
+@media (max-width: 600px) {
+    .downloadBox {
+        padding: 32px;
+    }
+
+    .downloadMain {
+        max-width: 95%;
+        margin: 0;
+    }
+}

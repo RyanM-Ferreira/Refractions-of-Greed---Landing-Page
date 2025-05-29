@@ -13,22 +13,14 @@
 </head>
 
 <body>
-    <ul class="nav">
+    <ul id="mySidenav" class="nav">
+        <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li>
         <li><a class="nav" href="">Início</a></li>
         <li><a class="nav" href="">Sinopse</a></li>
         <li><a class="nav" href="">Contato</a></li>
         <li><a class="nav" href="">Sobre</a></li>
-        <li><a class="nav navDownload" style="color: white;" href="">Download</a></li>
+        <li><a class=" navDownload" href="pages/download.html">Download</a></li>
     </ul>
-
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#">Início</a>
-        <a href="#">Sinopse</a>
-        <a href="#">Contato</a>
-        <a href="#">Sobre</a>
-        <a class="nav navDownload" style="color: white;" href="">Download</a>
-    </div>
 
     <button class="menuIcon" onclick="openNav()">Menu</button>
 
@@ -37,14 +29,15 @@
             <img class="titleLogo" src="assets/titleLogoWhite.png" alt="">
 
             <div class="mainButtons">
-                <button type="button" class="alternative">Sobre</button>
+                <button id="aboutButton" type="button" class="alternative">Sobre</button>
                 <button type="button">Download</button>
             </div>
         </div>
 
-        <div class="aboutGame">
+        <div id="aboutSection" class="aboutGame">
             <h6>Sobre o jogo</h6>
             <h2>Até onde a ambição pode te levar?</h2>
+
             <div class="textToImage">
                 <p>Em Refractions of Greed, você controla um personagem que encontra um artefato misterioso e acaba
                     envolvido em eventos que colocam à prova sua ambição. Conforme avança, novos caminhos se abrem,
@@ -54,35 +47,43 @@
         </div>
 
         <div class="backgroundDiv">
-            <div class="aboutProject">
-                <h6>Sobre o projeto</h6>
-                <h2>Criação e inovação</h2>
+            <div class="mechanics">
+                <h6>Mecânicas</h6>
+                <h2>Simples e desafiador</h2>
+
                 <div class="textToImage">
-                    <p>Desenvolvido como TCC por alunos da ETEC Martinho Di Ciero, o jogo foi feito na Godot Engine
-                        usando GDScript e C#. O objetivo é oferecer uma experiência única de exploração e narrativa,
-                        misturando gêneros e mecânicas de forma criativa.</p>
+                    <img src="assets/john.png" alt="Game Image">
+
                     <div></div>
-                    <img src="assets/etecLogo.png" alt="Project Image">
+
+                    <p>Foco no essencial: desviar, atacar e explorar. Com controles simples e combate
+                        direto, o jogador enfrenta inimigos, supera obstáculos e descobre segredos em um mundo 2D
+                        interligado. A jogabilidade é acessível, mas com desafios na medida certa.</p>
                 </div>
             </div>
         </div>
 
-        <div class="mechanics">
-            <h6>Mecânicas</h6>
-            <h2>Simples e desafiador</h2>
-            <div class="textToImage">
-                <img src="assets/john.png" alt="Game Image">
-                <div></div>
-                <p>Refractions of Greed foca no essencial: desviar, atacar e explorar. Com controles simples e combate
-                    direto, o jogador enfrenta inimigos, supera obstáculos e descobre segredos em um mundo 2D
-                    interligado. A jogabilidade é acessível, mas com desafios na medida certa.</p>
-            </div>
+        <div class="aboutProject">
+            <h6>Sobre o projeto</h6>
+            <h2>Criação e inovação</h2>
 
+            <div class="textToImage">
+                <p>Desenvolvido como TCC por alunos da ETEC Martinho Di Ciero, o jogo foi feito na Godot Engine
+                    usando C#. O objetivo é oferecer uma experiência diferente do habitual,
+                    misturando gêneros e mecânicas de forma xccriativa.</p>
+
+                <div></div>
+
+                <img src="assets/etecLogo.png
+                    " alt="Project Image">
+            </div>
         </div>
-    </div>
     </div>
 
     <footer>© Refractions of Greed - 2025</footer>
+
+    <!-- Vinculação de Scripts  -->
+    <script src="scripts/homeScripts.js"></script>
 </body>
 
 </html>
