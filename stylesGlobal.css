@@ -1,6 +1,8 @@
   :root {
       --backgroundColor: #211A4E;
       --highlightColor: #4856ee;
+      --highlightColor2: #be1499;
+      --blackBackground: #111;
       --mainBackground: white;
 
       --defaultPadding: 20px;
@@ -157,12 +159,15 @@
 
   .menuIcon {
       position: fixed;
-      right: 15px;
-      top: 0;
+      right: 0;
       display: none;
+      align-self: center;
+      font-size: smaller;
+      background-color: var(--blackBackground);
+      cursor: pointer;
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 720px) {
       .menuIcon {
           display: block;
       }

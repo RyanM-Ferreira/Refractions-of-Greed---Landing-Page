@@ -43,6 +43,15 @@ div.textToImage {
     align-items: center;
 }
 
+div.backgroundDiv {
+    padding: 0;
+
+    background-image: url(../assets/home/cavern_v2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 img {
     height: 200px;
     border-radius: var(--uiBorderRadius);
@@ -58,6 +67,10 @@ img.titleLogo {
 .mainButtons button {
     margin: 0;
     width: 15%;
+}
+
+p {
+    text-indent: 2cm;
 }
 
 /* Responsividade para telas menores (ou tentativa)*/
@@ -88,9 +101,13 @@ img.titleLogo {
 
 @media (max-width: 600px) {
     div.title {
-        height: auto;
+        height: 60vh;
         padding: 40px 10px;
         background-size: cover;
+    }
+
+    img.titleLogo {
+        max-width: 100%;
     }
 
     div.aboutGame,
@@ -99,5 +116,4 @@ img.titleLogo {
         width: 90%;
         padding: 10px;
     }
-
 }
