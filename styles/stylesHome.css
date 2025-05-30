@@ -23,15 +23,6 @@ div.mechanics {
     margin: auto;
 }
 
-/*
-div.aboutGame {
-    background-image: url(../assets/home/arch.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-*/
-
 div.aboutProject {
     text-align: right;
 }
@@ -97,17 +88,16 @@ p {
     .mainButtons button {
         width: 47%;
     }
-}
 
-@media (max-width: 600px) {
     div.title {
-        height: 60vh;
+        height: 70vh;
         padding: 40px 10px;
         background-size: cover;
     }
 
     img.titleLogo {
-        max-width: 100%;
+        margin: 50px 0 50px 0;
+        max-width: 200%;
     }
 
     div.aboutGame,

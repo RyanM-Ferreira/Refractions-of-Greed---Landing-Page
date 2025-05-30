@@ -73,7 +73,8 @@
       border-radius: var(--uiBorderRadius);
       display: flex;
       padding: 5px;
-      right: 0;
+      top: 5px;
+      right: 10px;
       position: fixed;
   }
 
@@ -130,15 +131,21 @@
 
   .menuIcon {
       position: fixed;
-      right: 0;
+      top: 10px;
+      right: 20px;
       display: none;
       align-self: center;
       font-size: smaller;
-      background-color: var(--blackBackground);
+      background-color: var(--highlightColor);
       cursor: pointer;
   }
 
-  @media (max-width: 1280px) {
+
+  .closebtn {
+      display: none;
+  }
+
+  @media (max-width: 900px) {
       .menuIcon {
           display: block;
       }
@@ -150,7 +157,7 @@
           position: fixed;
           z-index: 1;
           top: 0;
-          right: 0;
+          right: -10px;
           background-color: #111;
           overflow-x: hidden;
           transition: 0.5s;
@@ -160,22 +167,30 @@
           text-align: center;
       }
 
-      .nav a.navDownload {
-          padding: 8px;
+      li .closebtn {
+          text-decoration: none;
+          background: none;
+          display: block;
+
       }
 
-      .nav a {
-          padding: 8px;
+      .nav li a.navDownload {
+          background: none;
+          padding: 0px;
       }
 
       .nav li a {
+          padding: 16px;
+          border-radius: var(--buttonBorderRadius);
           color: white;
           font-size: medium;
       }
 
       .nav li {
-          margin: 8px;
-
+          border-radius: var(--buttonBorderRadius);
+          background-color: #29263f;
+          margin: 16px;
+          padding: 8px;
       }
 
       .nav .closebtn {
@@ -184,9 +199,5 @@
           right: 25px;
           font-size: 36px;
           margin-left: 50px;
-      }
-
-      .nav a:hover {
-          color: #f1f1f1;
       }
   }
