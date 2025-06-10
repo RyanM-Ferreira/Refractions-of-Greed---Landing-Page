@@ -196,3 +196,8 @@
           margin-left: 50px;
       }
   }
+
+  .navActive {
+      color: var(--highlightColor2) !important;
+      font-weight: bolder;
+  }
