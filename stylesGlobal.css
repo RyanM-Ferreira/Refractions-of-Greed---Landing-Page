@@ -1,14 +1,23 @@
   :root {
+      /* colors */
       --backgroundColor: #211A4E;
-      --highlightColor: #4856ee;
+      --highlightColor: rgb(121, 59, 221);
       --highlightColor2: #be1499;
       --blackBackground: #111;
       --mainBackground: white;
+      --windowBackground: #312864;
+      --defaultShadowColor: rgba(19, 19, 19, 0.397);
 
+      /* sizes */
+      --defaultDivPadding: 32px;
+      --defaultMargin: 32px;
       --defaultPadding: 20px;
       --buttonBorderRadius: 8px;
       --uiBorderRadius: 12px;
       --borderSize: 3px;
+
+      /* misc */
+      --defaultShadow: 0 4px 24px var(--defaultShadowColor);
   }
 
   @font-face {
@@ -135,6 +144,12 @@
       cursor: pointer;
   }
 
+  div.textToImage {
+      padding: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
 
   .closebtn {
       display: none;
@@ -164,9 +179,7 @@
 
       li .closebtn {
           text-decoration: none;
-          background: none;
           display: block;
-
       }
 
       .nav li a.navDownload {
@@ -194,6 +207,11 @@
           right: 25px;
           font-size: 36px;
           margin-left: 50px;
+      }
+
+      div.textToImage {
+          flex-direction: column;
+          align-items: flex-start;
       }
   }
 

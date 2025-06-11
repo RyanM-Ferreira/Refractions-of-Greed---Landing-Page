@@ -27,16 +27,8 @@ div.aboutProject {
     text-align: right;
 }
 
-div.textToImage {
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 div.backgroundDiv {
     padding: 0;
-
     background-image: url(../assets/home/cavern_v2.png);
     background-size: cover;
     background-repeat: no-repeat;

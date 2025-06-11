@@ -1,5 +1,4 @@
 * {
-    word-break: break-all;
     box-sizing: border-box;
 }
 
@@ -21,11 +20,12 @@
 .aboutGame,
 .aboutProject,
 .aboutContact {
-    background: rgba(55, 46, 109, 0.7);
+ box-shadow: 0 4px 24px var(--defaultShadowColor);
+    background: var(--windowBackground);
     border-radius: var(--uiBorderRadius);
-    padding: var(--defaultPadding);
+    padding: var(--defaultDivPadding);
     width: 60%;
-    margin: 32px auto;
+    margin: var(--defaultMargin) auto;
 }
 
 h2 {
@@ -54,6 +54,7 @@ h2 {
 .aboutContact a {
     color: var(--highlightColor);
     text-decoration: none;
+    word-break: break-all;
 }
 
 @media (max-width: 900px) {
@@ -64,5 +65,19 @@ h2 {
         width: 90%;
     }
 
-    .title h1 {}
+    img {
+        margin: 16px 0;
+        max-width: 100%;
+        align-self: center;
+    }
+
+    div.textToImage {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+img {
+    height: 170px;
+    border-radius: var(--uiBorderRadius);
 }
