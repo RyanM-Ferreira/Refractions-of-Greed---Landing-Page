@@ -113,6 +113,10 @@ h1 {
         padding-bottom: 16px;
     }
 
+.galleyMain{
+width: 90%;
+}
+
     .card {
         min-width: 280px;
         max-width: 280px;
