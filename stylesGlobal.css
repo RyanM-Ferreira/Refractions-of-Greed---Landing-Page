@@ -29,6 +29,7 @@
       font-family: 'MainFont';
       color: white;
       line-height: 1.5;
+      transition: all 0.3s ease-in-out;
   }
 
   html,

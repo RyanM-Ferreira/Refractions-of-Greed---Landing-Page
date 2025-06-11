@@ -1,45 +1,39 @@
 * {
     box-sizing: border-box;
-}
 
+}
 
 body {
     text-align: center;
-    padding: 0;
 }
 
 .main {
-    box-shadow: var(--defaultShadow);
     background: var(--windowBackground);
-    border-radius: var(--uiBorderRadius);
-    padding: var(--defaultDivPadding);
-    width: 60%;
-    margin: var(--defaultMargin) auto;
+    box-shadow: var(--defaultShadow);
+    padding: var(--defaultPadding);
 }
 
 .title h1 {
     text-align: left;
     color: var(--highlightColor2);
+    border-left: 4px solid var(--highlightColor2);
+    padding-left: 0.6rem;
 }
 
 .researchDesc {
     text-align: justify;
+    color: var(--textSecondary);
 }
 
 .iframeContainer {
-    width: 60%;
-    height: 95vh;
+    width: 100%;
+    height: 90vh;
+    border: none;
     box-shadow: var(--defaultShadow);
-    border-radius: var(--uiBorderRadius);
 }
 
 @media (max-width: 900px) {
-    .main {
-        width: 90%;
-    }
-
     .iframeContainer {
-        width: 90%;
-        height: 80vh;
+        height: 85vh;
     }
 }
