@@ -80,6 +80,7 @@
       top: 5px;
       right: 10px;
       position: fixed;
+      z-index: 1000;
   }
 
   li a.nav {

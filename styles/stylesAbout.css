@@ -27,7 +27,7 @@
     background: var(--windowBackground);
     border-radius: var(--uiBorderRadius);
     padding: var(--defaultDivPadding);
-    width: 60%;
+    width: 70%;
     margin: var(--defaultMargin) auto;
 }
 
