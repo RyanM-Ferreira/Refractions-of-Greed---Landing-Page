@@ -56,7 +56,6 @@ p {
     text-indent: 2cm;
 }
 
-/* Responsividade para telas menores (ou tentativa)*/
 @media (max-width: 900px) {
 
     div.aboutGame,
@@ -89,7 +88,7 @@ p {
 
     img.titleLogo {
         margin: 50px 0 50px 0;
-        max-width: 200%;
+        max-width: 100%;
     }
 
     div.aboutGame,

@@ -29,7 +29,7 @@
       font-family: 'MainFont';
       color: white;
       line-height: 1.5;
-      transition: all 0.3s ease-in-out;
+      transition: all 0.5s ease-in-out;
   }
 
   html,
@@ -38,7 +38,6 @@
   }
 
   button {
-      transition: filter 0.3s ease;
       background-color: var(--highlightColor);
       padding: var(--defaultPadding);
       border-radius: var(--buttonBorderRadius);
@@ -106,7 +105,6 @@
   }
 
   .nav a:hover {
-      filter: brightness(50%);
       color: pink;
   }
 
