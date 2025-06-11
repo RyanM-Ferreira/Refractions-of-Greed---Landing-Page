@@ -15,12 +15,15 @@
     color: var(--highlightColor2);
     margin: 0;
     font-size: 150%;
+
+    border-left: 4px solid var(--highlightColor2);
+    padding-left: 0.6rem;
 }
 
 .aboutGame,
 .aboutProject,
 .aboutContact {
- box-shadow: 0 4px 24px var(--defaultShadowColor);
+    box-shadow: 0 4px 24px var(--defaultShadowColor);
     background: var(--windowBackground);
     border-radius: var(--uiBorderRadius);
     padding: var(--defaultDivPadding);
@@ -31,6 +34,9 @@
 h2 {
     color: var(--highlightColor2);
     margin: 16px 0 16px;
+
+    border-left: 4px solid var(--highlightColor2);
+    padding-left: 0.6rem;
 }
 
 .teamList {

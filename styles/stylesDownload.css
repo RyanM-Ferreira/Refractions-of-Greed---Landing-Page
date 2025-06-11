@@ -8,6 +8,9 @@ div.downloadMain {
 
 .downloadMain h1 {
     color: var(--highlightColor2);
+
+    border-left: 4px solid var(--highlightColor2);
+    padding-left: 0.6rem;
 }
 
 .downloadBox {
@@ -31,11 +34,10 @@ div.downloadMain {
 
 .downloadBtn {
     background: linear-gradient(90deg, var(--highlightColor), var(--highlightColor2));
-    color: #fff;
     margin-bottom: 32px;
     cursor: pointer;
-    transition: filter 0.2s;
     width: 100%;
+    font-weight: bold;
 }
 
 .downloadBtn:hover {
@@ -54,6 +56,9 @@ div.downloadMain {
 .requisitos h3 {
     color: var(--highlightColor2);
     margin-bottom: 8px;
+
+    border-left: 4px solid var(--highlightColor2);
+    padding-left: 0.6rem;
 }
 
 .requisitos ul {
