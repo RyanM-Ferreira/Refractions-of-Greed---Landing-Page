@@ -1,8 +1,8 @@
   :root {
       /* colors */
       --backgroundColor: #211A4E;
-      --highlightColor: #793bdd;
-      --highlightColor2: #be1499;
+      --highlightColor: #6f3df8;
+      --highlightColor2: #3372fa;
       --blackBackground: #111;
       --mainBackground: white;
       --windowBackground: #312864;
@@ -107,7 +107,8 @@
       background-color: var(--highlightColor);
       border-radius: var(--buttonBorderRadius);
       margin-right: -5px;
-      color: white;
+      color: white !important;
+      font-weight: medium;
       text-decoration: none;
       padding: var(--defaultPadding);
   }
