@@ -48,6 +48,7 @@
       padding: var(--defaultPadding);
       border-radius: var(--buttonBorderRadius);
       border-style: none;
+      cursor: pointer;
   }
 
   button.alternative {
