@@ -14,7 +14,6 @@ div.downloadMain {
 }
 
 .downloadBox {
-
     box-shadow: 0 4px 24px var(--defaultShadowColor);
     background: var(--windowBackground);
     border-radius: var(--uiBorderRadius);
@@ -26,12 +25,12 @@ div.downloadMain {
 .downloadBox h2 {
     color: var(--highlightColor);
     margin-bottom: 16px;
-    
+
 }
 
 .downloadBox p {
     margin-bottom: 32px;
-    
+
     color: #fff;
 }
 
@@ -70,9 +69,24 @@ div.downloadMain {
     padding-left: 18px;
 }
 
-@media (max-width: 600px) {
+.profileLinks {
+    flex-direction: row;
+    text-align: center;
+}
+
+@media (max-width: 900px) {
     .downloadBox {
         width: 90%;
         padding: 32px;
+    }
+
+    .downloadBtn {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1366px) {
+    .downloadBox {
+        width: 85%;
     }
 }

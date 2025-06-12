@@ -11,6 +11,7 @@ body {
     background: var(--windowBackground);
     box-shadow: var(--defaultShadow);
     padding: var(--defaultPadding);
+    width: 100%;
 }
 
 .title h1 {

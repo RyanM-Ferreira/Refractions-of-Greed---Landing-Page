@@ -1,7 +1,7 @@
   :root {
       /* colors */
       --backgroundColor: #211A4E;
-      --highlightColor: rgb(121, 59, 221);
+      --highlightColor: #793bdd;
       --highlightColor2: #be1499;
       --blackBackground: #111;
       --mainBackground: white;
@@ -32,9 +32,15 @@
       transition: all 0.5s ease-in-out;
   }
 
-  html,
-  body {
+  html {
       height: 100%;
+      min-height: 100%;
+  }
+
+  body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100%;
   }
 
   button {
@@ -121,6 +127,7 @@
       color: black;
       font-size: smaller;
       text-align: center;
+      margin-top: auto;
   }
 
   /* ScrollBar */
