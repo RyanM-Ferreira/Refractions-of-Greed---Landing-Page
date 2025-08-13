@@ -27,7 +27,8 @@ h4 {
 
 div.aboutGame,
 div.aboutProject,
-div.mechanics {
+div.mechanics,
+div.slideshowContainer {
     width: 60%;
     margin: auto;
 }
@@ -45,16 +46,23 @@ div.backgroundDiv {
 }
 
 img {
-    height: 200px;
     border-radius: var(--uiBorderRadius);
+    object-fit: contain;
+    height: 200px;
 }
 
 img.titleLogo {
     margin: auto;
-    max-width: 70%;
+    max-width: 50%;
     height: auto;
     object-fit: contain;
-    margin-top: 2.5%;
+    margin-top: 5%;
+}
+
+img.slideshowContainer {
+    margin: auto;
+    height: 350px;
+    border-radius: var(--uiBorderRadius);
 }
 
 .mainButtons button {
@@ -63,16 +71,10 @@ img.titleLogo {
 }
 
 p {
-    text-indent: 2cm;
+    text-indent: 1.5cm;
 }
 
-@media (max-width: 900px) {
-
-    div.aboutGame,
-    div.aboutProject,
-    div.mechanics {
-        width: 90%;
-    }
+@media (max-width: 720px) {
 
     div.textToImage {
         flex-direction: column;
@@ -80,8 +82,7 @@ p {
     }
 
     img {
-        margin: 16px 0;
-        width: 100%;
+        width: 50%;
         height: auto;
         align-self: center;
     }
@@ -91,20 +92,29 @@ p {
     }
 
     div.title {
-        height: 70vh;
+        height: 60vh;
         padding: 40px 10px;
         background-size: cover;
     }
 
     img.titleLogo {
-        margin: 50px 0 50px 0;
+        margin: 64px 0 64px 0;
         max-width: 100%;
+        width: 100%;
+    }
+
+    img.slideshowContainer {
+        margin: auto;
+        width: 90%;
+        height: 90%;
+        border-radius: var(--uiBorderRadius);
     }
 
     div.aboutGame,
     div.aboutProject,
-    div.mechanics {
-        width: 90%;
+    div.mechanics,
+    div.slideshowContainer {
+        width: 90% !important;
         padding: 10px;
     }
 }

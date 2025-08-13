@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="google9bd4f984b581d61c" />
+
+    <meta name="description"
+        content="Refractions of Greed é um jogo 2D que desafia os limites da ambição humana. Desenvolvido como TCC na ETEC.">
+    <meta name="keywords"
+        content="jogo 2D, Refractions, of Greed, Greed, Refractions of Greed, TCC ETEC, Godot, C#, jogo indie, metroidvania">
+    <meta name="author" content="Ryan Ferreira">
+
+    <title>Landing Page - Refractions of Greed</title>
+
+    <link rel="stylesheet" href="../styles/StylesLandingPage.css">
+    <link rel="stylesheet" href="../styles/stylesHome.css">
+    <link rel="stylesheet" href="../styles/stylesDownload.css">
+    <link rel="stylesheet" href="../stylesGlobal.css">
+</head>
+
+<body>
+    <ul id="mySidenav" class="nav">
+        <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li>
+        <li><a class="nav" data-target="title">Início</a></li>
+        <li><a class="nav" data-target="about">Sobre</a></li>
+        <li><a class="nav" data-target="mechanics">Mecânicas</a></li>
+        <li><a class="nav" data-target="project">Sobre Projeto</a></li>
+        <li><a class="nav navDownload" data-target="download">Download</a></li>
+    </ul>
+
+    <button class="menuIcon" onclick="openNav()">&#9776 Menu</button>
+
+    <div class="main">
+        <div id="title" class="title">
+            <img class="titleLogo" src="../assets/titleLogo_v5.png" alt="">
+
+            <div class="mainButtons">
+                <button id="aboutButton" type="button" class="alternative">Sobre</button>
+                <a href="pages/download.html"><button type="button">Download</button></a>
+            </div>
+        </div>
+
+        <div id="about" class="aboutGame">
+            <h4>Sobre o jogo</h4>
+            <h2>Até onde a ambição pode te levar?</h2>
+
+            <div class="textToImage">
+                <p>Em Refractions of Greed, você controla um personagem que encontra um artefato misterioso e acaba
+                    envolvido em eventos que colocam à prova sua ambição. Conforme avança, novos caminhos se abrem,
+                    inimigos mais fortes surgem e a linha entre poder e autodestruição começa a se apagar. No fim, o
+                    maior desafio será enfrentar a si mesmo; e decidir se ainda há espaço para redenção.</p>
+
+                <div></div>
+
+                <img src="../assets/gallery/player/john.png" alt="Game Image">
+            </div>
+        </div>
+
+        <div id="mechanics" class="mechanics">
+            <h4>Mecânicas</h4>
+            <h2>Simples e desafiador</h2>
+        </div>
+
+        <div class="backgroundDiv">
+            <div class="slideshowContainer">
+                <div class="slides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="../assets/nothing to see here.jpg" alt="" class="slideshowContainer">
+                    <div class="text">Contrles simples com foco no essencial: desviar, atacar e explorar.</div>
+                </div>
+
+                <div class="slides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="../assets/nothing to see here.jpg" alt="" class="slideshowContainer">
+                    <div class="text">Socorro</div>
+                </div>
+
+                <div class="slides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="../assets/gallery/guardians/Pride.png" alt="" class="slideshowContainer">
+                    <div class="text">A jogabilidade é acessível, mas com desafios na medida certa.</div>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <div class="dotsContainer">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+        </div>
+
+        <div id="project" class="aboutProject">
+            <h4>Sobre o projeto</h4>
+            <h2>Criação e inovação</h2>
+
+            <div class="textToImage">
+                <p>Desenvolvido como TCC por alunos da ETEC Martinho Di Ciero, o jogo foi feito na Godot Engine
+                    usando C#. O objetivo é oferecer uma experiência diferente do habitual,
+                    misturando gêneros e mecânicas de forma criativa.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="download" class="aboutGame">
+        <h4>Download</h4>
+
+        <h2>Baixe agora Refractions of Greed</h2>
+        <p>
+            Clique no botão abaixo para ser redirecionado à página da itch.io e baixar a versão mais recente do jogo.
+        </p>
+
+        <a href="https://raining-gears.itch.io/refractions-of-greed" style="text-decoration: none;">
+            <button type="button" class="downloadBtn">Baixar na itch.io</button>
+        </a>
+
+        <div class="requisitos">
+            <h3>Requisitos mínimos</h3>
+            <ul>
+                <li>Windows 10 ou superior</li>
+                <li>?GB RAM</li>
+                <li>?MB de espaço livre</li>
+                <li>Placa de vídeo compatível com Vulkan</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>&copy; 2025 Refractions of Greed | Raining Gears<br></footer>
+
+    <!-- Vinculação de Scripts  -->
+    <script src="../scriptsGlobal.js"></script>
+    <script src="../scripts/homeScripts.js"></script>
+    <script src="../scripts/landingPageScripts.js"></script>
+</body>
+
+</html>

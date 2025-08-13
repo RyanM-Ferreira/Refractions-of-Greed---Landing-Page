@@ -228,3 +228,83 @@
       color: var(--highlightColor2) !important;
       font-weight: bolder;
   }
+
+  /* Carrossel de Imagens */
+  .slideshowContainer {
+      position: relative;
+      margin: auto;
+      text-align: center;
+  }
+
+  .slides {
+      display: none;
+  }
+
+  .prev,
+  .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      padding: 16px;
+      transition: 0.75s ease;
+      border-radius: var(--uiBorderRadius);
+      font-size: x-large;
+      align-self: center;
+  }
+
+  .prev {
+      left: 0;
+  }
+
+  .next {
+      right: 0;
+  }
+
+  .prev:hover,
+  .next:hover {
+      background-color: rgba(0, 0, 0, 0.65);
+  }
+
+  .dotsContainer {
+      text-align: center;
+  }
+
+  .text {
+      font-size: 16px;
+  }
+
+  .numbertext {
+      font-size: 12px;
+  }
+
+  .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: var(--blackBackground);
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 1s ease;
+  }
+
+  .active,
+  .dot:hover {
+      background-color: var(--highlightColor);
+  }
+
+  .fade {
+      animation-name: fade;
+      animation-duration: 1s;
+  }
+
+  @keyframes fade {
+      from {
+          opacity: .24
+      }
+
+      to {
+          opacity: 1
+      }
+  }
