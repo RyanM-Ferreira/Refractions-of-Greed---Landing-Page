@@ -1,5 +1,5 @@
 div.aboutGame,
-div.aboutProject,
+div.mainDiv,
 div.mechanics,
 div.slideshowContainer {
     width: 65% !important;
@@ -23,7 +23,7 @@ div.slideshowContainer {
 @media screen and (max-width: 1366px) {
 
     div.aboutGame,
-    div.aboutProject,
+    div.mainDiv,
     div.mechanics,
     div.slideshowContainer {
         width: 75% !important;

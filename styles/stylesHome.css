@@ -26,14 +26,17 @@ h4 {
 }
 
 div.aboutGame,
-div.aboutProject,
+div.mainDiv,
 div.mechanics,
 div.slideshowContainer {
     width: 60%;
     margin: auto;
 }
 
-div.aboutProject {}
+div.subDiv {
+    padding: 0;
+    width: 50%;
+}
 
 div.backgroundDiv {
     padding: 0;
@@ -107,7 +110,7 @@ p {
     }
 
     div.aboutGame,
-    div.aboutProject,
+    div.mainDiv,
     div.mechanics,
     div.slideshowContainer {
         width: 90% !important;

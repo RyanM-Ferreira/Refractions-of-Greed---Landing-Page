@@ -62,7 +62,7 @@ div.downloadMain {
 .requisitos {
     background: #18123a;
     border-radius: 8px;
-    padding: 16px;
+    padding: var(--defaultDivPadding);
     margin-top: 16px;
     color: #fff;
     text-align: left;
