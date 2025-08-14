@@ -22,6 +22,7 @@ function showSlides(x) {
     let slides = document.getElementsByClassName("slides");
     let dots = document.getElementsByClassName("dot");
 
+    // Veirfica se a índice é maior ou menor que o número de slides e "dá a volta"
     if (x > slides.length) {
         slideIndex = 1;
     }
@@ -29,6 +30,7 @@ function showSlides(x) {
         slideIndex = slides.length;
     }
 
+    // Oculta os slides
     for (let i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
@@ -38,6 +40,5 @@ function showSlides(x) {
     }
 
     slides[slideIndex - 1].style.display = "block";
-
     dots[slideIndex - 1].className += " active";
 }

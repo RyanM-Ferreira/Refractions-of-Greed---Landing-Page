@@ -5,3 +5,33 @@ div.slideshowContainer {
     width: 65% !important;
 }
 
+.sideImage {
+    margin-right: 20px;
+    position: static;
+    height: auto;
+    max-width: 7%;
+}
+
+.johnMain {
+    position: absolute;
+    bottom: 50px;
+    right: 0;
+    height: 50%;
+    display: block;
+}
+
+@media screen and (max-width: 1366px) {
+
+    div.aboutGame,
+    div.aboutProject,
+    div.mechanics,
+    div.slideshowContainer {
+        width: 75% !important;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .johnMain {
+        display: none;
+    }
+}

@@ -33,8 +33,7 @@ div.slideshowContainer {
     margin: auto;
 }
 
-div.aboutProject {
-}
+div.aboutProject {}
 
 div.backgroundDiv {
     padding: 0;
@@ -61,7 +60,7 @@ img.titleLogo {
 img.slideshowContainer,
 video.slideshowContainer {
     margin: auto;
-    height: 512px;
+    width: 95%;
     border-radius: var(--uiBorderRadius);
 }
 
@@ -75,7 +74,6 @@ p {
 }
 
 @media (max-width: 720px) {
-
     div.textToImage {
         flex-direction: column;
         align-items: flex-start;
@@ -105,8 +103,6 @@ p {
 
     img.slideshowContainer {
         margin: auto;
-        width: 90%;
-        height: 90%;
         border-radius: var(--uiBorderRadius);
     }
 
