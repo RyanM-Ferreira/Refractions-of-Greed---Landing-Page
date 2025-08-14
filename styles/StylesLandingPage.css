@@ -17,7 +17,7 @@ div.slideshowContainer {
     bottom: 50px;
     right: 0;
     height: 50%;
-    display: block;
+    display: block !important;
 }
 
 @media screen and (max-width: 1366px) {
@@ -30,8 +30,16 @@ div.slideshowContainer {
     }
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 768px) {
     .johnMain {
-        display: none;
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 1920px) {
+    .johnMain {
+        position: absolute;
+        bottom: 128px;
+        height: 50%;
     }
 }
