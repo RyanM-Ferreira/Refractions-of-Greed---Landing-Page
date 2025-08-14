@@ -34,7 +34,6 @@ div.slideshowContainer {
 }
 
 div.aboutProject {
-    text-align: right;
 }
 
 div.backgroundDiv {
@@ -59,9 +58,10 @@ img.titleLogo {
     margin-top: 5%;
 }
 
-img.slideshowContainer {
+img.slideshowContainer,
+video.slideshowContainer {
     margin: auto;
-    height: 350px;
+    height: 512px;
     border-radius: var(--uiBorderRadius);
 }
 
