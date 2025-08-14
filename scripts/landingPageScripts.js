@@ -1,4 +1,4 @@
-document.querySelectorAll('#mySidenav [data-target]').forEach(option => {
+document.querySelectorAll('#mySidenav [data-target], #mainButtons [data-target]').forEach(option => {
     option.addEventListener('click', e => {
         e.preventDefault();
 
