@@ -33,13 +33,21 @@ div.slideshowContainer {
     margin: auto;
 }
 
+.downloadBtn {
+    width: 100% !important;
+}
+
+div.mainDiv {
+    padding: 0;
+}
+
 div.subDiv {
     padding: 0;
     width: 50%;
 }
 
 div.backgroundDiv {
-    padding: 0;
+    padding: var(--defaultPadding);
     background-image: url(../assets/home/cavern_v2.png);
     background-size: cover;
     background-repeat: no-repeat;

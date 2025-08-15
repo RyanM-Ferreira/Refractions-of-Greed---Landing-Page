@@ -38,6 +38,11 @@ div.downloadMain {
     margin: var(--defaultMargin) auto auto;
     display: block;
     color: white;
+    text-decoration: none;
+}
+
+a.adBtn {
+    text-decoration: none;
 }
 
 .navDownload:hover,
@@ -71,8 +76,8 @@ div.downloadMain {
 
 .requisitos h3 {
     color: var(--highlightColor2);
-    margin-bottom: 8px;
-
+    margin-top: 0;
+    margin-bottom: var(--defaultMargin);
     border-left: 4px solid var(--highlightColor2);
     padding-left: 0.6rem;
 }

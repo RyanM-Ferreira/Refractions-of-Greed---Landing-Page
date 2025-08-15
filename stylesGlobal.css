@@ -317,6 +317,12 @@
       color: var(--highlightColor2);
   }
 
+  hr {
+      border: 2px solid var(--highlightColor2);
+      margin: var(--defaultDivPadding) 0;
+      border-radius: var(--uiBorderRadius);
+  }
+
   .dot {
       cursor: pointer;
       height: 16px;
