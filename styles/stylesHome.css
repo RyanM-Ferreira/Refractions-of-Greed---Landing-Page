@@ -109,6 +109,10 @@ p {
         border-radius: var(--uiBorderRadius);
     }
 
+    div.subDiv {
+        width: 100%;
+    }
+
     div.aboutGame,
     div.mainDiv,
     div.mechanics,
