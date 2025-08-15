@@ -31,7 +31,7 @@
       font-family: 'MainFont';
       color: white;
       line-height: 1.5;
-      transition: all 0.75s ease-in-out;
+      transition: all 0.5s ease-in-out;
   }
 
   html {
@@ -134,7 +134,7 @@
   }
 
   button:hover {
-      filter: brightness(50%);
+      transform: scale(1.05);
       color: pink;
   }
 
@@ -293,13 +293,13 @@
   .next:hover {
       background-color: white;
       color: var(--blackBackground);
+      height: 35%;
   }
 
   .dotsContainer {
       width: fit-content;
       margin: -32px auto var(--defaultMargin);
       background: var(--backgroundColor);
-      text-align: center;
       border-radius: var(--uiBorderRadius);
   }
 
@@ -337,32 +337,35 @@
       transition: background-color 1s ease;
   }
 
-  .active,
-  .dot:hover {
-      background-color: var(--highlightColor);
-  }
-
   .active {
-      padding: 12px;
+      background-color: var(--highlightColor);
+      padding: 16px;
   }
 
-  .fade {
-      animation-name: fade;
-      animation-duration: 1s;
+  div.dotsContainer:hover {
+      transform: scale(1.25);
   }
 
   @media screen and (max-width: 720px) {
       .slideshowContainer {
           max-width: 90%;
       }
-  }
 
-  @keyframes fade {
-      from {
-          transform: translateY(-256px);
+      div.text {
+          font-size: medium;
+          min-height: 360px;
+          flex-shrink: 0;
+          align-content: center;
       }
 
-      to {
-          transform: translateY(0);
+      img.slideImage {
+          max-width: 200%;
+          width: 85%;
+          align-content: center;
+
+      }
+
+      .dot {
+          width: 24px;
       }
   }

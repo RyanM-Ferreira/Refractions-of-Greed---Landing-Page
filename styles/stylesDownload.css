@@ -48,7 +48,6 @@ a.adBtn {
 .navDownload:hover,
 .downloadBtn:hover {
     animation: gradientMove 0.5s linear infinite;
-    filter: brightness(100%);
 }
 
 @keyframes gradientMove {

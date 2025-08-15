@@ -48,6 +48,11 @@ div.subDiv {
     border-radius: var(--uiBorderRadius);
 }
 
+div.subDiv:hover {
+    filter: brightness(125%);
+    transform: scale(1.05);
+}
+
 div.backgroundDiv {
     min-height: 512px;
     flex-shrink: 0;
@@ -90,6 +95,57 @@ video.slideshowContainer {
     width: 15%;
 }
 
+.titleLogo {
+    animation: SlideDown 1s ease-out forwards, bounce 0.75s ease-in-out infinite alternate;
+    animation-delay: 0s, 1s;
+}
+
+
+.SlideUp {
+    animation-name: SlideUp;
+    animation-duration: 1s;
+}
+
+.SlideDown {
+    animation-name: SlideDown;
+    animation-duration: 1s;
+}
+
+@keyframes SlideDown {
+    from {
+        transform: translateY(-256px) scale(1);
+    }
+
+    to {
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes SlideUp {
+    from {
+        transform: translateY(256px) scale(1);
+    }
+
+    to {
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes bounce {
+    from {
+        transform: translateY(0) scale(1);
+    }
+
+    to {
+        transform: translateY(0) scale(1.05);
+    }
+}
+
+
+.sideImage:hover {
+    transform: scale(1.5);
+}
+
 p {
     text-indent: 1.5cm;
 }
@@ -104,6 +160,15 @@ p {
         width: 50%;
         height: auto;
         align-self: center;
+    }
+
+    .sideImage {
+        width: 25%;
+        max-width: 100%;
+    }
+
+    div.backgroundDiv {
+        padding: 0;
     }
 
     .mainButtons button {
