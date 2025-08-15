@@ -17,6 +17,7 @@ div.slideshowContainer {
     bottom: 50px;
     right: 0;
     height: 50%;
+    border-radius: 0;
     display: block !important;
 }
 

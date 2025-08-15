@@ -21,22 +21,22 @@
 </head>
 
 <body>
-    <ul id="mySidenav" class="nav">
-        <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li>
-        <li><a class="nav" data-target="title">Início</a></li>
-        <li><a class="nav" data-target="about">Sobre</a></li>
-        <li><a class="nav" data-target="mechanics">Mecânicas</a></li>
-        <li><a class="nav" data-target="project">Sobre o Projeto</a></li>
-        <li><a class="nav navDownload" data-target="download">Download</a></li>
-    </ul>
+    <nav id="mySidenav" class="nav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a class="nav" data-target="title">Início</a>
+        <a class="nav" data-target="about">Sobre</a>
+        <a class="nav" data-target="mechanics">Mecânicas</a>
+        <a class="nav" data-target="project">Projeto</a>
+        <a class="nav navDownload" data-target="download">Download</a>
+    </nav>
 
     <button class="menuIcon" onclick="openNav()">&#9776 Menu</button>
 
     <div class="main">
         <div id="title" class="title">
-            <img class="titleLogo" src="../assets/titleLogo_v5.png" alt="">
+            <img class="titleLogo fade" src="../assets/titleLogo_v5.png" alt="">
 
-            <div id="mainButtons" class="mainButtons">
+            <div id="mainButtons" class="mainButtons fade">
                 <a data-target="about"><button type="button" class="alternative">Sobre</button></a>
                 <a data-target="download"><button type="button">Download</button></a>
             </div>
@@ -60,107 +60,108 @@
             </div>
         </div>
 
+        <div class="backgroundDiv">
+            <div id="project" class="mainDiv">
+                <div class="textToImage">
+                    <div class="subDiv">
+                        <h4>Sobre o projeto</h4>
+                        <h2>O que é o Projeto?</h2>
+                        <p>Refractions of Greed é um jogo 2D Metroidvania que explora como a ganância pode consumir uma
+                            pessoa.
+                            O protagonista, Johnny 'John' Lancaster, obcecado por poder e riquezas, leva o mundo à ruína
+                            e
+                            agora
+                            precisa atravessar seus
+                            escombros para tentar se redimir, ou ser engolido de vez por seus próprios desejos.
+                        </p>
+                    </div>
+
+                    <div></div>
+
+                    <div class="subDiv">
+                        <h4>Sobre o projeto</h4>
+                        <h2>Criação do Projeto</h2>
+                        <p>Desenvolvido como TCC por alunos da ETEC Martinho Di Ciero, o jogo foi criado na Godot Engine
+                            com
+                            C#,
+                            buscando oferecer uma experiência única ao misturar gêneros e mecânicas de forma criativa.
+                            Inspirado
+                            em
+                            títulos como Hollow Knight, The Legend of Zelda e Dark Souls, combina a estética e a
+                            dificuldade
+                            desses
+                            jogos para entregar uma aventura bela, porém desafiadora.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div id="mechanics" class="mechanics">
             <h4>Mecânicas</h4>
             <h2>Simples e desafiador</h2>
         </div>
 
-        <div class="backgroundDiv">
-            <div class="slideshowContainer">
-                <div class="slides fade">
-                    <div class="numbertext">1 / 3</div>
-                    <video class="slideshowContainer" autoplay muted loop>
-                        <source src="../assets/videos/mechanics.mp4" type="video/mp4">
-                        Seu navegador provavelmente não suporta vídeos HTML5.
-                    </video>
-                    <div class="text">Controles simples com foco no essencial: desviar, atacar e explorar.</div>
-                </div>
+        <div class="slideshowContainer">
+            <div class="slides">
+                <div class="numbertext">1 / 3</div>
+                <video class="slideshowContainer" autoplay muted loop>
+                    <source src="../assets/videos/mechanics.mp4" type="video/mp4">
+                    Seu navegador provavelmente não suporta vídeos HTML5.
+                </video>
+                <div class="text">Controles simples com foco no essencial: desviar, atacar e explorar.</div>
+            </div>
 
-                <div class="slides fade">
-                    <div class="numbertext">2 / 3</div>
-                    <video class="slideshowContainer" autoplay muted loop>
-                        <source src="../assets/videos/bat.mp4" type="video/mp4">
-                        Seu navegador provavelmente não suporta vídeos HTML5.
+            <div class="slides">
+                <div class="numbertext">2 / 3</div>
+                <video class="slideshowContainer" autoplay muted loop>
+                    <source src="../assets/videos/bat.mp4" type="video/mp4">
+                    Seu navegador provavelmente não suporta vídeos HTML5.
 
-                    </video>
-                    <div class="text">Inimigos que não abandonam seus alvos.</div> <!--socorro--> <!--Não-->
-                </div>
+                </video>
+                <div class="text">Inimigos que não abandonam seus alvos.</div> <!--socorro--> <!--Não-->
+            </div>
 
-                <div class="slides fade">
-                    <div class="numbertext">3 / 3</div>
-                    <video class="slideshowContainer" autoplay muted loop>
-                        <source src="../assets/videos/enemys.mp4" type="video/mp4">
-                        Seu navegador provavelmente não suporta vídeos HTML5.
-                    </video>
-                    <div class="text">Ameaças sempre à espreita.</div> <!--Sei lá o que eu escrevo aqui-->
-                </div>
+            <div class="slides">
+                <div class="numbertext">3 / 3</div>
+                <video class="slideshowContainer" autoplay muted loop>
+                    <source src="../assets/videos/enemys.mp4" type="video/mp4">
+                    Seu navegador provavelmente não suporta vídeos HTML5.
+                </video>
+                <div class="text">Ameaças sempre à espreita.</div> <!--Sei lá o que eu escrevo aqui-->
+            </div>
 
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
-                <div class="dotsContainer">
-                    <span class="dot" onclick="currentSlide(1)"></span>
-                    <span class="dot" onclick="currentSlide(2)"></span>
-                    <span class="dot" onclick="currentSlide(3)"></span>
-                </div>
-
+            <div class="dotsContainer">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
             </div>
         </div>
 
-        <div id="project" class="mainDiv">
-            <div class="textToImage">
-                <div class="subDiv">
-                    <h4>Sobre o projeto</h4>
-                    <h2>O que é o Projeto?</h2>
-                    <p>Refractions of Greed é um jogo 2D Metroidvania que explora como a ganância pode consumir uma
-                        pessoa.
-                        O protagonista, Johnny 'John' Lancaster, obcecado por poder e riquezas, leva o mundo à ruína e
-                        agora
-                        precisa atravessar seus
-                        escombros para tentar se redimir, ou ser engolido de vez por seus próprios desejos.
-                    </p>
-                </div>
+        <div id="download" class="aboutGame">
+            <div class="requisitos">
+                <h4>Download</h4>
+                <h3>Requisitos mínimos</h3>
+                <ul>
+                    <li>Windows 10 ou superior</li>
+                    <li>?GB RAM</li>
+                    <li>?MB de espaço livre</li>
+                    <li>Placa de vídeo compatível com Vulkan</li>
+                </ul>
 
-                <div></div>
+                <h2>Baixe agora Refractions of Greed</h2>
+                <p>
+                    Clique no botão abaixo para ser redirecionado à página da itch.io e fazer o download da versão mais
+                    recente
+                    do jogo.
+                </p>
 
-                <div class="subDiv">
-                    <h4>Sobre o projeto</h4>
-                    <h2>Criação do Projeto</h2>
-                    <p>Desenvolvido como TCC por alunos da ETEC Martinho Di Ciero, o jogo foi criado na Godot Engine com
-                        C#,
-                        buscando oferecer uma experiência única ao misturar gêneros e mecânicas de forma criativa.
-                        Inspirado
-                        em
-                        títulos como Hollow Knight, The Legend of Zelda e Dark Souls, combina a estética e a dificuldade
-                        desses
-                        jogos para entregar uma aventura bela, porém desafiadora.
-                    </p>
-                </div>
+                <a href="https://raining-gears.itch.io/refractions-of-greed" style="text-decoration: none;"><button
+                        type="button" class="downloadBtn" style="width: 100% !important;">Baixar na itch.io</button></a>
             </div>
-        </div>
-    </div>
-
-    <div id="download" class="aboutGame">
-        <div class="requisitos">
-            <h4>Download</h4>
-
-            <h2>Baixe agora Refractions of Greed</h2>
-            <p>
-                Clique no botão abaixo para ser redirecionado à página da itch.io e fazer o download da versão mais
-                recente
-                do jogo.
-            </p>
-
-            <a href="https://raining-gears.itch.io/refractions-of-greed" style="text-decoration: none;"><button
-                    type="button" class="downloadBtn" style="width: 100% !important;">Baixar na itch.io</button></a>
-
-            <h3>Requisitos mínimos</h3>
-            <ul>
-                <li>Windows 10 ou superior</li>
-                <li>?GB RAM</li>
-                <li>?MB de espaço livre</li>
-                <li>Placa de vídeo compatível com Vulkan</li>
-            </ul>
         </div>
     </div>
 
