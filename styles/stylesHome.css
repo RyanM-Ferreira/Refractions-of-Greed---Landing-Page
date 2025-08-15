@@ -42,16 +42,21 @@ div.mainDiv {
 }
 
 div.subDiv {
-    padding: 0;
+    padding: var(--defaultPadding);
     width: 50%;
+    background-color: #322874;
+    border-radius: var(--uiBorderRadius);
 }
 
 div.backgroundDiv {
+    min-height: 512px;
+    flex-shrink: 0;
     padding: var(--defaultPadding);
     background-image: url(../assets/home/cavern_v2.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    align-content: center;
 }
 
 img {
@@ -68,7 +73,12 @@ img.titleLogo {
     margin-top: 5%;
 }
 
-img.slideshowContainer,
+img.slideImage {
+    height: auto;
+    margin: auto;
+    max-width: 35%;
+}
+
 video.slideshowContainer {
     margin: auto;
     width: 95%;
