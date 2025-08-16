@@ -6,6 +6,53 @@ div.main {
     padding: 0;
 }
 
+div.aboutGame,
+div.mainDiv,
+div.mechanics,
+div.slideshowContainer {
+    width: 65% !important;
+}
+
+.sideImage {
+    margin-right: 20px;
+    position: static;
+    height: auto;
+    max-width: 7%;
+}
+
+.johnMain {
+    position: absolute;
+    bottom: 50px;
+    right: 0;
+    height: 50%;
+    border-radius: 0;
+    display: block !important;
+}
+
+@media screen and (max-width: 1366px) {
+
+    div.aboutGame,
+    div.mainDiv,
+    div.mechanics,
+    div.slideshowContainer {
+        width: 75% !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .johnMain {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 1920px) {
+    .johnMain {
+        position: absolute;
+        bottom: 128px;
+        height: 50%;
+    }
+}
+
 div.title {
     padding: 0;
     text-align: center;
@@ -21,7 +68,8 @@ h2 {
     color: var(--highlightColor2);
 }
 
-h4 {
+h4,
+h3 {
     color: var(--highlightColor);
 }
 
@@ -100,7 +148,6 @@ video.slideshowContainer {
     animation-delay: 0s, 1s;
 }
 
-
 .SlideUp {
     animation-name: SlideUp;
     animation-duration: 1s;
@@ -140,7 +187,6 @@ video.slideshowContainer {
         transform: translateY(0) scale(1.05);
     }
 }
-
 
 .sideImage:hover {
     transform: scale(1.5);

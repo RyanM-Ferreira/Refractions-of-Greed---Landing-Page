@@ -1,3 +1,71 @@
+* {
+    box-sizing: border-box;
+}
+
+.downloadBtn {
+    background: linear-gradient(45deg, var(--highlightColor), var(--highlightColor2));
+    background-size: 200% 100%;
+    width: 50%;
+    font-weight: bold;
+    margin: var(--defaultMargin) auto auto;
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+a.adBtn {
+    text-decoration: none;
+}
+
+.navDownload:hover,
+.downloadBtn:hover {
+    animation: gradientMove 0.5s linear infinite;
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    50% {
+        background-position: 100% 100%;
+    }
+
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+.requisitos {
+    background: var(--darkerBackgroundColor);
+    border-radius: var(--uiBorderRadius);
+    padding: var(--defaultDivPadding);
+    margin-top: 16px;
+    color: #fff;
+    text-align: left;
+}
+
+.requisitos h3 {
+    color: var(--highlightColor2);
+    margin-top: 0;
+    margin-bottom: var(--defaultMargin);
+    border-left: 4px solid var(--highlightColor2);
+    padding-left: 0.6rem;
+}
+
+.requisitos ul {
+    margin: 0;
+    padding-left: 18px;
+}
+
+div {
+    padding: var(--defaultPadding);
+}
+
+div.main {
+    padding: 0;
+}
+
 div.aboutGame,
 div.mainDiv,
 div.mechanics,
@@ -42,5 +110,204 @@ div.slideshowContainer {
         position: absolute;
         bottom: 128px;
         height: 50%;
+    }
+}
+
+div.title {
+    padding: 0;
+    text-align: center;
+    height: 80vh;
+    background-image: url(../assets/home/montain_v2-snow.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+h1,
+h2 {
+    color: var(--highlightColor2);
+}
+
+h4,
+h3 {
+    color: var(--highlightColor);
+}
+
+div.aboutGame,
+div.mainDiv,
+div.mechanics,
+div.slideshowContainer {
+    width: 60%;
+    margin: auto;
+}
+
+.downloadBtn {
+    width: 100% !important;
+}
+
+div.mainDiv {
+    padding: 0;
+}
+
+div.subDiv {
+    padding: var(--defaultPadding);
+    width: 50%;
+    background-color: #322874;
+    border-radius: var(--uiBorderRadius);
+}
+
+div.subDiv:hover {
+    filter: brightness(125%);
+    transform: scale(1.05);
+}
+
+div.backgroundDiv {
+    min-height: 512px;
+    flex-shrink: 0;
+    padding: var(--defaultPadding);
+    background-image: url(../assets/home/cavern_v2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    align-content: center;
+}
+
+img {
+    border-radius: var(--uiBorderRadius);
+    object-fit: contain;
+    height: 200px;
+}
+
+img.titleLogo {
+    margin: auto;
+    max-width: 50%;
+    height: auto;
+    object-fit: contain;
+    margin-top: 5%;
+}
+
+img.slideImage {
+    height: auto;
+    margin: auto;
+    max-width: 35%;
+}
+
+video.slideshowContainer {
+    margin: auto;
+    width: 95%;
+    border-radius: var(--uiBorderRadius);
+}
+
+.mainButtons button {
+    margin: 0;
+    width: 15%;
+}
+
+.titleLogo {
+    animation: SlideDown 1s ease-out forwards, bounce 0.75s ease-in-out infinite alternate;
+    animation-delay: 0s, 1s;
+}
+
+.SlideUp {
+    animation-name: SlideUp;
+    animation-duration: 1s;
+}
+
+.SlideDown {
+    animation-name: SlideDown;
+    animation-duration: 1s;
+}
+
+@keyframes SlideDown {
+    from {
+        transform: translateY(-256px) scale(1);
+    }
+
+    to {
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes SlideUp {
+    from {
+        transform: translateY(256px) scale(1);
+    }
+
+    to {
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes bounce {
+    from {
+        transform: translateY(0) scale(1);
+    }
+
+    to {
+        transform: translateY(0) scale(1.05);
+    }
+}
+
+.sideImage:hover {
+    transform: scale(1.5);
+}
+
+p {
+    text-indent: 1.5cm;
+}
+
+/* Responsividade (Ou tentativa) */
+@media (max-width: 720px) {
+    div.textToImage {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    img {
+        width: 50%;
+        height: auto;
+        align-self: center;
+    }
+
+    .sideImage {
+        width: 25%;
+        max-width: 100%;
+    }
+
+    div.backgroundDiv {
+        padding: 0;
+    }
+
+    .mainButtons button {
+        width: 47%;
+    }
+
+    div.title {
+        height: 60vh;
+        padding: 40px 10px;
+        background-size: cover;
+    }
+
+    img.titleLogo {
+        margin: 64px 0 64px 0;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    img.slideshowContainer {
+        margin: auto;
+        border-radius: var(--uiBorderRadius);
+    }
+
+    div.subDiv {
+        width: 100%;
+    }
+
+    div.aboutGame,
+    div.mainDiv,
+    div.mechanics,
+    div.slideshowContainer {
+        width: 90% !important;
+        padding: 10px;
     }
 }
