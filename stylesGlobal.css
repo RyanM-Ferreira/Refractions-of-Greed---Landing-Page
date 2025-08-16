@@ -1,5 +1,6 @@
+/* Variáveis */
 :root {
-    /* colors */
+    /* Cores */
     --backgroundColor: #211A4E;
     --darkerBackgroundColor: #18123a;
     --highlightColor: #6f4bd1;
@@ -9,15 +10,16 @@
     --windowBackground: #312864;
     --defaultShadowColor: rgba(0, 0, 0, 0.2);
 
-    /* sizes */
+    /* Tamanhos */
     --defaultDivPadding: 32px;
     --defaultMargin: 32px;
     --defaultPadding: 20px;
     --buttonBorderRadius: 8px;
     --uiBorderRadius: 12px;
     --borderSize: 3px;
+    --defaultGap: 24px;
 
-    /* misc */
+    /* Miscelânea (eu não sei se essa palavra existe no português. */
     --defaultShadow: 0px 2px 8px 0px var(--defaultShadowColor);
 }
 
@@ -40,6 +42,7 @@ html {
 }
 
 body {
+    overflow-x: hidden;
     display: flex;
     flex-direction: column;
     min-height: 100%;
@@ -57,7 +60,7 @@ p {
 }
 
 hr {
-    border: 2px solid var(--highlightColor2);
+    border: var(--borderSize) solid var(--highlightColor);
     margin: var(--defaultDivPadding) 0;
     border-radius: var(--uiBorderRadius);
 }
@@ -81,7 +84,6 @@ button.alternative {
 
 button:hover {
     transform: scale(1.05);
-    color: pink;
 }
 
 /* Links */
@@ -140,6 +142,10 @@ nav a.nav:hover {
     color: pink;
 }
 
+span {
+    color: var(--highlightColor);
+}
+
 a.navDownload {
     background: linear-gradient(90deg, var(--highlightColor), var(--highlightColor2));
     background-size: 200% 100%;
@@ -167,12 +173,11 @@ a.navDownload {
 /* Elementos do Footer */
 footer {
     background-color: var(--mainBackground);
-    margin: 0;
     padding: var(--defaultPadding);
     color: black;
     font-size: smaller;
     text-align: center;
-    margin-top: auto;
+    margin-top: var(--defaultMargin);
 }
 
 /* Personalizando a ScrollBar */

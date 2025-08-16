@@ -26,6 +26,7 @@
         <a class="nav" data-target="about">Sobre</a>
         <a class="nav" data-target="project">Projeto</a>
         <a class="nav" data-target="gallery">Galeria</a>
+        <a class="nav" data-target="mechanics">Mecânicas</a>
         <a class="nav navDownload" data-target="download">Download</a>
     </nav>
 
@@ -36,7 +37,7 @@
             <img class="titleLogo" src="assets/titleLogo_v5.png" alt="">
 
             <div id="mainButtons" class="mainButtons SlideDown">
-                <a data-target="about"><button type="button" class="alternative">Sobre</button></a>
+                <a><button type="button" class="alternative" onclick="comingSoon()">Wiki</button></a>
                 <a data-target="download"><button type="button">Download</button></a>
             </div>
 
@@ -204,19 +205,49 @@
             </div>
         </div>
 
+        <div id="mechanics" class="mechanics">
+            <h4>Gameplay & Mecânicas</h4>
+            <h2>Videos do Jogo</h2>
+
+            <div class="videoShowcase">
+                <div class="mainVideo">
+                    <video autoplay loop muted>
+                        <source src="assets/videos/mechanics.mp4" type="video/mp4">
+                    </video>
+                    <p>Controles simples, com foco no essencial: desviar, atacar e explorar.</p>
+                </div>
+
+                <div class="sideVideos">
+                    <div class="videoCard">
+                        <video autoplay loop muted>
+                            <source src="assets/videos/bat.mp4" type="video/mp4">
+                        </video>
+                        <p>Inimigos que não abandonam seus alvos.</p>
+                    </div>
+                    <div class="videoCard">
+                        <video autoplay loop muted>
+                            <source src="assets/videos/enemys.mp4" type="video/mp4">
+                        </video>
+                        <p>Ameaças sempre á espreita.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div id="download" class="aboutGame">
-            <div class="requisitos">
+            <div class="requirements">
+                <h4>Download</h4>
+
                 <h3>Requisitos mínimos de sistema</h3>
                 <ul>
-                    <li>OS: Windows 10 ou superior</li>
-                    <li>Memória: ?GB</li>
-                    <li>Armazenamento: ?MB de espaço livre</li>
-                    <li>Placa de vídeo compatível com Vulkan</li>
+                    <li><span>OS:</span> Windows 10 ou superior</li>
+                    <li><span>Memória:</span> ?GB</li>
+                    <li><span>Disco:</span> ?MB de espaço livre</li>
+                    <li><span>GPU:</span> Placa de vídeo compatível com Vulkan</li>
                 </ul>
 
                 <hr>
 
-                <h4>Download</h4>
                 <h2>Baixe agora Refractions of Greed</h2>
                 <p>
                     Clique no botão abaixo para ser redirecionado à página da itch.io e fazer o download da versão mais

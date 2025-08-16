@@ -2,6 +2,59 @@
     box-sizing: border-box;
 }
 
+/* Área de Requisitos de Sistemas */
+.requirements {
+    background: var(--darkerBackgroundColor);
+    border-radius: var(--uiBorderRadius);
+    padding: var(--defaultDivPadding);
+    margin-top: 16px;
+    color: #fff;
+    text-align: left;
+}
+
+.requirements h3 {
+    color: var(--highlightColor2);
+    margin-top: 0;
+    margin-bottom: var(--defaultMargin);
+    border-left: 4px solid var(--highlightColor2);
+    padding-left: 0.6rem;
+}
+
+.requirements ul {
+    margin: 0;
+    padding-left: 18px;
+}
+
+/* Título e Textos. */
+h1,
+h2 {
+    color: var(--highlightColor2);
+}
+
+h4,
+h3 {
+    color: var(--highlightColor);
+}
+
+p {
+    text-indent: 1.5cm;
+}
+
+/* Botões */
+.mainButtons button {
+    margin: 0;
+    width: 15%;
+}
+
+.downloadBtn {
+    width: 100% !important;
+}
+
+.navDownload:hover,
+.downloadBtn:hover {
+    animation: gradientMove 0.5s linear infinite;
+}
+
 .downloadBtn {
     background: linear-gradient(45deg, var(--highlightColor), var(--highlightColor2));
     background-size: 200% 100%;
@@ -17,100 +70,13 @@ a.adBtn {
     text-decoration: none;
 }
 
-.navDownload:hover,
-.downloadBtn:hover {
-    animation: gradientMove 0.5s linear infinite;
-}
-
-@keyframes gradientMove {
-    0% {
-        background-position: 0% 0%;
-    }
-
-    50% {
-        background-position: 100% 100%;
-    }
-
-    100% {
-        background-position: 0% 0%;
-    }
-}
-
-.requisitos {
-    background: var(--darkerBackgroundColor);
-    border-radius: var(--uiBorderRadius);
-    padding: var(--defaultDivPadding);
-    margin-top: 16px;
-    color: #fff;
-    text-align: left;
-}
-
-.requisitos h3 {
-    color: var(--highlightColor2);
-    margin-top: 0;
-    margin-bottom: var(--defaultMargin);
-    border-left: 4px solid var(--highlightColor2);
-    padding-left: 0.6rem;
-}
-
-.requisitos ul {
-    margin: 0;
-    padding-left: 18px;
-}
-
+/* Divs */
 div {
     padding: var(--defaultPadding);
 }
 
 div.main {
     padding: 0;
-}
-
-div.aboutGame,
-div.mainDiv,
-div.mechanics,
-div.slideshowContainer {
-    width: 65% !important;
-}
-
-.sideImage {
-    margin-right: 20px;
-    position: static;
-    height: auto;
-    max-width: 7%;
-}
-
-.johnMain {
-    position: absolute;
-    bottom: 50px;
-    right: 0;
-    height: 50%;
-    border-radius: 0;
-    display: block !important;
-}
-
-@media screen and (max-width: 1366px) {
-
-    div.aboutGame,
-    div.mainDiv,
-    div.mechanics,
-    div.slideshowContainer {
-        width: 75% !important;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .johnMain {
-        display: none !important;
-    }
-}
-
-@media screen and (max-width: 1920px) {
-    .johnMain {
-        position: absolute;
-        bottom: 128px;
-        height: 50%;
-    }
 }
 
 div.title {
@@ -123,26 +89,12 @@ div.title {
     background-position: center;
 }
 
-h1,
-h2 {
-    color: var(--highlightColor2);
-}
-
-h4,
-h3 {
-    color: var(--highlightColor);
-}
-
 div.aboutGame,
 div.mainDiv,
 div.mechanics,
 div.slideshowContainer {
-    width: 60%;
+    width: 75% !important;
     margin: auto;
-}
-
-.downloadBtn {
-    width: 100% !important;
 }
 
 div.mainDiv {
@@ -172,6 +124,7 @@ div.backgroundDiv {
     align-content: center;
 }
 
+/* Imagens */
 img {
     border-radius: var(--uiBorderRadius);
     object-fit: contain;
@@ -192,15 +145,82 @@ img.slideImage {
     max-width: 35%;
 }
 
+.johnMain {
+    position: absolute;
+    bottom: 50px;
+    right: 0;
+    height: 50%;
+    border-radius: 0;
+    display: block !important;
+}
+
+.sideImage {
+    margin-right: 20px;
+    position: static;
+    height: auto;
+    max-width: 7%;
+}
+
+/* Video */
 video.slideshowContainer {
     margin: auto;
     width: 95%;
     border-radius: var(--uiBorderRadius);
 }
 
-.mainButtons button {
-    margin: 0;
-    width: 15%;
+.videoShowcase {
+    display: flex;
+    gap: var(--defaultGap);
+    justify-content: center;
+    padding: 0;
+}
+
+.mainVideo {
+    flex: 2;
+    background: var(--darkerBackgroundColor);
+    border-radius: var(--uiBorderRadius);
+    padding: var(--defaultPadding);
+    text-align: center;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.sideVideos {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: var(--defaultGap);
+    padding: 0;
+}
+
+.videoCard,
+.mainVideo {
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.videoCard:hover,
+.mainVideo:hover {
+    transform: scale(1.03);
+    filter: brightness(115%);
+}
+
+.mainVideo video,
+.videoCard video {
+    width: 100%;
+    border-radius: var(--uiBorderRadius);
+    object-fit: cover;
+}
+
+.mainVideo p,
+.videoCard p {
+    margin-top: 12px;
+    font-size: medium;
+}
+
+.videoCard {
+    background: var(--darkerBackgroundColor);
+    border-radius: var(--uiBorderRadius);
+    padding: var(--defaultPadding);
+    text-align: center;
 }
 
 .titleLogo {
@@ -208,6 +228,7 @@ video.slideshowContainer {
     animation-delay: 0s, 1s;
 }
 
+/* Animações */
 .SlideUp {
     animation-name: SlideUp;
     animation-duration: 1s;
@@ -248,16 +269,26 @@ video.slideshowContainer {
     }
 }
 
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    50% {
+        background-position: 100% 100%;
+    }
+
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
 .sideImage:hover {
     transform: scale(1.5);
 }
 
-p {
-    text-indent: 1.5cm;
-}
-
 /* Responsividade (Ou tentativa) */
-@media (max-width: 720px) {
+@media (max-width: 1200px) {
     div.textToImage {
         flex-direction: column;
         align-items: flex-start;
@@ -294,9 +325,8 @@ p {
         width: 100%;
     }
 
-    img.slideshowContainer {
-        margin: auto;
-        border-radius: var(--uiBorderRadius);
+    .slideshowContainer {
+        max-width: 100% !important;
     }
 
     div.subDiv {
@@ -309,5 +339,43 @@ p {
     div.slideshowContainer {
         width: 90% !important;
         padding: 10px;
+    }
+
+    .videoShowcase {
+        flex-direction: column;
+    }
+
+    .sideVideos {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .videoCard {
+        width: 47%;
+    }
+
+    .johnMain {
+        display: none !important;
+    }
+
+    .mainVideo p,
+    .videoCard p {
+        text-indent: 0.0cm;
+        font-size: small;
+    }
+}
+
+@media screen and (min-width: 1900px) {
+    .johnMain {
+        position: absolute;
+        bottom: 128px;
+        height: 50%;
+    }
+
+    div.aboutGame,
+    div.mainDiv,
+    div.mechanics,
+    div.slideshowContainer {
+        width: 65% !important;
     }
 }

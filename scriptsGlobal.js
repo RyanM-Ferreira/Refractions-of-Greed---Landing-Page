@@ -35,10 +35,15 @@ function showSlides(x) {
         slides[i].style.display = "none";
     }
 
+    // Adiciona a classe "ativo" para o 'dot' correspondente ao slide.
     for (let i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" active", "");
     }
 
     slides[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].className += " active";
+}
+
+function comingSoon() {
+    alert("Não finalizado. Disponível em breve...");
 }
