@@ -236,7 +236,7 @@ video.slideshowContainer {
 }
 
 /* Responsividade (Ou tentativa) */
-@media (max-width: 1200px) {
+@media (max-width: 1100px) {
     div.text {
         width: 100%;
         margin: 0;
@@ -268,7 +268,7 @@ video.slideshowContainer {
     }
 
     div.title {
-        height: 60vh;
+        height: 70vh;
         padding: 40px 10px;
         background-size: cover;
     }
@@ -317,13 +317,32 @@ video.slideshowContainer {
         text-indent: 0.0cm;
         font-size: small;
     }
+
+    @media screen and (min-width: 540px) {
+        img.titleLogo {
+            margin: 24px 0 24px 0;
+            max-width: 75%;
+        }
+    }
 }
 
-@media screen and (min-width: 1900px) {
+@media screen and (min-height: 1080px) {
+    @media screen and (min-width: 1900px) {
+        .johnMain {
+            bottom: 128px;
+            height: 25%;
+        }
+    }
+
+    .mainButtons {
+        width: 75%;
+        margin: auto;
+    }
+
     .johnMain {
         position: absolute;
         bottom: 128px;
-        height: 50%;
+        height: 40%;
     }
 
     div.aboutGame,
