@@ -233,6 +233,10 @@ video.slideshowContainer {
 
 /* Responsividade (Ou tentativa) */
 @media (max-width: 1200px) {
+    .subDiv p {
+        font-size: small;
+    }
+
     div.textToImage {
         flex-direction: column;
         align-items: flex-start;
