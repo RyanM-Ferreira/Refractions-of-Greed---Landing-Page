@@ -237,6 +237,12 @@ video.slideshowContainer {
         font-size: small;
     }
 
+    div.text {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
     div.textToImage {
         flex-direction: column;
         align-items: flex-start;
