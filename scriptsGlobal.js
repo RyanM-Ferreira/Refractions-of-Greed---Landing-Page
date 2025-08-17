@@ -2,12 +2,28 @@ let slideIndex = 1;
 
 showSlides(slideIndex);
 
-function openNav() {
-    document.getElementById("mySidenav").style.width = "300px";
+var isActive = false;
+
+const navBtns = document.querySelectorAll(".navBtn");
+
+function alternateNav() {
+    if (!isActive) {
+        document.getElementById("mySidenav").style.height = "75%";
+        document.getElementById("mySidenav").style.top = "0";
+
+        navBtns.forEach(btn => {
+            btn.addEventListener("click", alternateNav);
+        });
+    }
+    else {
+        document.getElementById("mySidenav").style.height = "0px";
+        document.getElementById("mySidenav").style.top = "-16px";
+    }
+
+    isActive = !isActive;
 }
 
 function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
 }
 
 function plusSlides(x) {

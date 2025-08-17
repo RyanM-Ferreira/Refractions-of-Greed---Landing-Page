@@ -21,27 +21,26 @@
 
 <body>
     <nav id="mySidenav" class="nav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a class="nav" data-target="title">Início</a>
-        <a class="nav" data-target="about">Sobre</a>
-        <a class="nav" data-target="project">Projeto</a>
-        <a class="nav" data-target="gallery">Galeria</a>
-        <a class="nav" data-target="mechanics">Mecânicas</a>
-        <a class="nav navDownload" data-target="download">Download</a>
+        <a class="nav navBtn" data-target="title">Início</a>
+        <a class="nav navBtn" data-target="about">Sobre</a>
+        <a class="nav navBtn" data-target="project">Projeto</a>
+        <a class="nav navBtn" data-target="gallery">Galeria</a>
+        <a class="nav navBtn" data-target="mechanics">Mecânicas</a>
+        <a class="nav navBtn navDownload" data-target="download">Download</a>
     </nav>
 
-    <button class="menuIcon" onclick="openNav()">&#9776 Menu</button>
+    <button class="menuIcon" onclick="alternateNav()">&#9776 Menu</button>
 
     <div class="main">
         <div id="title" class="title">
-            <img class="titleLogo" src="assets/titleLogo_v5.png" alt="">
+            <img class="titleLogo" src="assets/titleLogo_v5.png" alt="Refractions of Greed Logo">
 
             <div id="mainButtons" class="mainButtons SlideDown">
                 <a><button type="button" class="alternative" onclick="comingSoon()">Wiki</button></a>
                 <a data-target="download"><button type="button">Download</button></a>
             </div>
 
-            <img class="johnMain SlideUp" src="assets/home/johnMain.png" alt="">
+            <img class="johnMain SlideUp" src="assets/home/johnMain.png" alt="John Lancaster">
         </div>
 
         <div id="about" class="aboutGame">
