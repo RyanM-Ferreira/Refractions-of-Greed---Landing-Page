@@ -82,7 +82,7 @@ div.title {
     padding: 0;
     text-align: center;
     height: 80vh;
-    background-image: url(../assets/home/montain_v2-snow.png);
+    background-image: url(../assets/home/montain_v3.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -105,6 +105,10 @@ div.subDiv {
     width: 50%;
     background-color: #322874;
     border-radius: var(--uiBorderRadius);
+}
+
+.subDiv p {
+    font-size: small;
 }
 
 div.subDiv:hover {
@@ -233,10 +237,6 @@ video.slideshowContainer {
 
 /* Responsividade (Ou tentativa) */
 @media (max-width: 1200px) {
-    .subDiv p {
-        font-size: small;
-    }
-
     div.text {
         width: 100%;
         margin: 0;

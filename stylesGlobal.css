@@ -204,6 +204,8 @@ nav a {
     font-size: small;
     padding: var(--defaultPadding);
     margin: -4px;
+    user-select: none;
+    -webkit-user-select: none;
 }
 
 nav a.nav:hover {
