@@ -105,6 +105,7 @@ div.subDiv {
     width: 50%;
     background-color: #322874;
     border-radius: var(--uiBorderRadius);
+    margin: auto;
 }
 
 .subDiv p {

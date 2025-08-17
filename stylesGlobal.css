@@ -271,7 +271,7 @@ footer {
 .slideshowContainer {
     position: relative;
     text-align: center;
-    max-width: 75%;
+    max-width: 60%;
 }
 
 .slides {
@@ -318,7 +318,7 @@ footer {
     width: fit-content;
     margin: -32px auto var(--defaultMargin);
     background: var(--backgroundColor);
-    border-radius: var(--uiBorderRadius);
+    border-radius: 128px;
 }
 
 div.text {
@@ -343,17 +343,16 @@ div.text {
 .dot {
     cursor: pointer;
     height: 16px;
-    width: 32px;
-    margin: 0 2px;
+    width: 24px;
     background-color: white;
-    border-radius: 4px;
+    border-radius: 128px;
     display: inline-block;
     transition: background-color 1s ease;
 }
 
 .active {
     background-color: var(--highlightColor);
-    padding: 16px;
+    padding: 12px;
 }
 
 div.dotsContainer:hover {
