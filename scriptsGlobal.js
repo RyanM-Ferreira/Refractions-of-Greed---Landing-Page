@@ -9,9 +9,10 @@ const navBtns = document.querySelectorAll(".navBtn");
 // Menuzinho Mobile
 function alternateNav() {
     if (!isActive) {
-        document.getElementById("mySidenav").style.height = "75%";
+        document.getElementById("mySidenav").style.height = "70%";
         document.getElementById("mySidenav").style.top = "0";
 
+        // Fecha o menu quando pressionar algo na NavBar
         navBtns.forEach(btn => {
             btn.addEventListener("click", alternateNav);
         });

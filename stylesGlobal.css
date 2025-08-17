@@ -204,8 +204,8 @@ nav a {
     font-size: small;
     padding: var(--defaultPadding);
     margin: -4px;
-    user-select: none;
     -webkit-user-select: none;
+    user-select: none;
 }
 
 nav a.nav:hover {
@@ -223,8 +223,8 @@ span {
 
 .menuIcon {
     position: fixed;
-    top: 8px;
-    right: 16px;
+    top: 16px;
+    right: 24px;
     display: none;
     align-self: center;
     font-size: smaller;
@@ -361,12 +361,6 @@ div.dotsContainer:hover {
 }
 
 /* Responsividade Geral (Ou tentativa) */
-@media (max-width: 700px) {
-    ul.nav {
-        display: none;
-    }
-}
-
 @media (max-width: 900px) {
     .menuIcon {
         display: block;
@@ -374,24 +368,18 @@ div.dotsContainer:hover {
 
     nav.nav {
         height: 0px;
-        padding: auto;
-        width: 100%;
-        position: fixed;
-        top: -16px;
-        right: auto;
         background-color: #111;
-        overflow-x: hidden;
-        transition: 0.5s;
+        transition: 0.75s;
         display: block;
-        border-radius: 0;
         text-align: center;
         display: flex;
         flex-direction: column;
-        justify-content: end;
-    }
-
-    a .closebtn {
-        display: block;
+        justify-content: flex-end;
+        width: 95%;
+        position: fixed;
+        top: -16px;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     .nav a.navDownload,

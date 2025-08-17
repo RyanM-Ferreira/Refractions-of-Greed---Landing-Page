@@ -269,8 +269,7 @@ video.slideshowContainer {
 
     div.title {
         height: 70vh;
-        padding: 40px 10px;
-        background-size: cover;
+        padding: 32px 16px;
     }
 
     img.titleLogo {
@@ -321,7 +320,17 @@ video.slideshowContainer {
     @media screen and (min-width: 540px) {
         img.titleLogo {
             margin: 24px 0 24px 0;
-            max-width: 75%;
+            max-width: 60%;
+        }
+    }
+
+    @media screen and (max-height: 600px) {
+        img.titleLogo {
+            margin: 12px 0 12px 0;
+        }
+
+        div.title {
+            height: 95vh;
         }
     }
 }
