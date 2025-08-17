@@ -4,21 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Verificação Google -->
     <meta name="google-site-verification" content="google9bd4f984b581d61c" />
 
+    <!-- Meta Tags -->
     <meta name="description"
         content="Refractions of Greed é um jogo 2D que desafia os limites da ambição humana. Desenvolvido como TCC na ETEC.">
     <meta name="keywords"
         content="jogo 2D, Refractions, of Greed, Greed, Refractions of Greed, TCC ETEC, Godot, C#, jogo indie, metroidvania">
     <meta name="author" content="Ryan Ferreira">
 
-    <meta property="og:title" content="Refractions of Greed – Ambição e redenção">
+    <!-- OpenGraph para... sei lá o nome -->
+    <meta property="og:title" content="Refractions of Greed - Ambição e redenção">
     <meta property="og:description" content="Dominar o mundo é fácil. Difícil é dominar a si mesmo.">
     <meta property="og:image" content="https://refractionsofgreed.vercel.app/favicon.png">
     <meta property="og:url" content="https://refractionsofgreed.vercel.app/">
     <meta property="og:type" content="website">
 
-    <title>Landing Page - Refractions of Greed</title>
+    <title>Home - Refractions of Greed</title>
     <link rel="icon" type="image/png" href="favicon.png">
 
     <link rel="stylesheet" href="styles/StylesLandingPage.css">
@@ -26,6 +30,7 @@
 </head>
 
 <body>
+    <!-- NavBar -->
     <nav id="mySidenav" class="nav">
         <a class="nav navBtn" data-target="title">Início</a>
         <a class="nav navBtn" data-target="about">Sobre</a>
@@ -35,9 +40,11 @@
         <a class="nav navBtn navDownload" data-target="download">Download</a>
     </nav>
 
+    <!-- Botão de Menu, na visualização em Mobile -->
     <button class="menuIcon" onclick="alternateNav()">&#9776 Menu</button>
 
     <div class="main">
+        <!-- Título Principal -->
         <div id="title" class="title">
             <img class="titleLogo" src="assets/titleLogo_v5.png" alt="Refractions of Greed Logo">
 
@@ -46,13 +53,14 @@
                 <a data-target="download"><button type="button">Download</button></a>
             </div>
 
+            <!-- Imagem do Personagem na Capa -->
             <img class="johnMain SlideUp" src="assets/home/johnMain.png" alt="John Lancaster">
         </div>
 
+        <!-- Descrição -->
         <div id="about" class="aboutGame">
             <h4 id="about">Sobre o jogo</h4>
             <h2>Até onde a ambição pode te levar?</h2>
-
             <div class="textToImage">
                 <p>
                     Em Refractions of Greed, você controla um personagem que encontra um artefato misterioso e acaba
@@ -68,6 +76,7 @@
             </div>
         </div>
 
+        <!-- Sobre o Projeto (dentro do Fundo) -->
         <div id="project" class="backgroundDiv">
             <div class="mainDiv">
                 <div class="textToImage">
@@ -106,6 +115,7 @@
             <h2>Conheça os Principais Personagens</h2>
         </div>
 
+        <!-- Carrossel -->
         <div class="slideshowContainer">
             <div class="slides">
                 <div class="numbertext">1 / 7
@@ -197,9 +207,11 @@
                 </div>
             </div>
 
+            <!-- Botões Para Passar/Voltar -->
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
+            <!-- Slide Atual -->
             <div class="dotsContainer">
                 <span class="dot" onclick="currentSlide(1)"></span>
                 <span class="dot" onclick="currentSlide(2)"></span>
@@ -211,6 +223,7 @@
             </div>
         </div>
 
+        <!-- Videos -->
         <div id="mechanics" class="mechanics">
             <h4>Gameplay & Mecânicas</h4>
             <h2>Videos do Jogo</h2>
@@ -240,6 +253,7 @@
             </div>
         </div>
 
+        <!-- Caixa de Download -->
         <div id="download" class="aboutGame">
             <div class="requirements">
                 <h4>Download</h4>
@@ -268,14 +282,13 @@
         </div>
     </div>
 
+    <!-- Rodapé -->
     <footer>&copy; 2025 Refractions of Greed | Raining Gears
         <a class="link" href="assets/banner/Banner_v7_2.png">Banner do Projeto</a>
     </footer>
 
     <!-- Vinculação de Scripts  -->
     <script src="scriptsGlobal.js"></script>
-    <script src="scripts/homeScripts.js"></script>
-    <script src="scripts/landingPageScripts.js"></script>
 </body>
 
 </html>

@@ -6,6 +6,7 @@ var isActive = false;
 
 const navBtns = document.querySelectorAll(".navBtn");
 
+// Menuzinho Mobile
 function alternateNav() {
     if (!isActive) {
         document.getElementById("mySidenav").style.height = "75%";
@@ -60,6 +61,21 @@ function showSlides(x) {
     dots[slideIndex - 1].className += " active";
 }
 
+// Nada demais, apenas um alerta
 function comingSoon() {
     alert("Não finalizado. Disponível em breve...");
 }
+
+// Scroll Into View
+document.querySelectorAll('#mySidenav [data-target], #mainButtons [data-target]').forEach(option => {
+    option.addEventListener('click', e => {
+        e.preventDefault();
+
+        const optionID = option.getAttribute('data-target');
+        const optionElement = document.getElementById(optionID);
+
+        if (optionElement) {
+            optionElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    });
+});
