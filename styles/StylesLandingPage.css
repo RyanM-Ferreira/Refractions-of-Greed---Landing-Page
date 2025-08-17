@@ -108,6 +108,12 @@ div.subDiv {
     margin: auto;
 }
 
+div.subDivBackground {
+    width: auto;
+    background-color: #3f3391;
+    border-radius: var(--uiBorderRadius);
+}
+
 .subDiv p {
     font-size: small;
 }
