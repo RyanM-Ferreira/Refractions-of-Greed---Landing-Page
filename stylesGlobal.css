@@ -19,7 +19,7 @@
     --borderSize: 3px;
     --defaultGap: 24px;
 
-    /* Miscelânea (eu não sei se essa palavra existe no português. */
+    /* Miscelânea (eu não sei se essa palavra existe no português.) */
     --defaultShadow: 0px 2px 8px 0px var(--defaultShadowColor);
 }
 
@@ -33,7 +33,7 @@
     font-family: 'MainFont';
     color: white;
     line-height: 1.5;
-    transition: all 0.75s ease-in-out;
+    transition: all 0.5s ease-in-out;
     text-shadow: var(--defaultShadow);
 }
 
@@ -216,6 +216,7 @@ nav a.nav:hover {
 
 span {
     color: var(--highlightColor);
+    font-weight: bolder;
 }
 
 .menuIcon {
@@ -228,6 +229,8 @@ span {
     background-color: var(--highlightColor);
     cursor: pointer;
     z-index: 9999;
+    -webkit-user-select: none;
+    user-select: none;
 }
 
 .closebtn {
@@ -289,6 +292,8 @@ footer {
     height: 25%;
     background-color: var(--highlightColor);
     align-content: center;
+    -webkit-user-select: none;
+    user-select: none;
 }
 
 .prev {
@@ -302,8 +307,9 @@ footer {
 .prev:hover,
 .next:hover {
     background-color: white;
-    color: var(--blackBackground);
+    color: var(--highlightColor);
     height: 35%;
+    outline: 4px solid var(--highlightColor);
 }
 
 .dotsContainer {
@@ -321,13 +327,15 @@ div.text {
     border-radius: 16px;
     flex-shrink: 0;
     text-align: justify;
-    text-indent: 1.0cm;
+    text-indent: 0.75cm;
 }
 
 .numbertext {
     font-size: 16px;
     font-weight: bold;
     color: var(--highlightColor2);
+    -webkit-user-select: none;
+    user-select: none;
 }
 
 .dot {
@@ -426,6 +434,6 @@ div.dotsContainer:hover {
     }
 
     .dot {
-        width: 24px;
+        width: 18px;
     }
 }
