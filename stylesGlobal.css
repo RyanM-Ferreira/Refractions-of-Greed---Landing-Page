@@ -8,6 +8,7 @@
     --blackBackground: #111;
     --mainBackground: white;
     --windowBackground: #312864;
+    --secondaryColor: #322874;
     --defaultShadowColor: rgba(0, 0, 0, 0.25);
 
     /* Tamanhos */
@@ -292,7 +293,7 @@ footer {
     border-radius: var(--uiBorderRadius);
     font-size: x-large;
     height: 25%;
-    background-color: var(--highlightColor);
+    background-color: var(--secondaryColor);
     align-content: center;
     -webkit-user-select: none;
     user-select: none;
@@ -308,17 +309,16 @@ footer {
 
 .prev:hover,
 .next:hover {
-    background-color: white;
-    color: var(--highlightColor);
+    background-color: var(--highlightColor);
     height: 35%;
-    outline: 4px solid var(--highlightColor);
 }
 
 .dotsContainer {
     width: fit-content;
     margin: -32px auto var(--defaultMargin);
-    background: #322874;
+    background: var(--secondaryColor);
     border-radius: 128px;
+    height: auto;
 }
 
 div.text {
@@ -344,15 +344,15 @@ div.text {
     cursor: pointer;
     height: 16px;
     width: 24px;
-    background-color: white;
+    background-color: #6f4bd131;
     border-radius: 128px;
     display: inline-block;
     transition: background-color 1s ease;
+    padding: 12px;
 }
 
 .active {
     background-color: var(--highlightColor);
-    padding: 12px;
 }
 
 div.dotsContainer:hover {
@@ -367,7 +367,7 @@ div.dotsContainer:hover {
 
     nav.nav {
         height: 0px;
-        background-color: #111;
+        background-color: var(--blackBackground);
         transition: 0.75s;
         display: block;
         text-align: center;
