@@ -45,6 +45,11 @@ p {
     width: 15%;
 }
 
+.mainButtons {
+    margin-top: 12px;
+    justify-content: space-between;
+}
+
 .downloadBtn {
     width: 100% !important;
 }
@@ -132,6 +137,26 @@ div.backgroundDiv {
     background-repeat: no-repeat;
     background-position: center;
     align-content: center;
+}
+
+/* Logo Godot no Card */
+.inLine {
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+}
+
+.inLineContent {
+    padding: 0;
+}
+
+.godotLogo {
+    padding: 0;
+    margin-left: auto;
+    margin-bottom: auto;
+    max-height: 64px;
 }
 
 /* Imagens */
@@ -244,6 +269,14 @@ video.slideshowContainer {
 
 /* Responsividade (Ou tentativa) */
 @media (max-width: 1100px) {
+    .mainButtons button {
+        white-space: nowrap;
+    }
+
+    .godotLogo {
+        margin: auto;
+    }
+
     div.text {
         width: 100%;
         margin: 0;
@@ -271,7 +304,7 @@ video.slideshowContainer {
     }
 
     .mainButtons button {
-        width: 47%;
+        width: 48%;
     }
 
     div.title {

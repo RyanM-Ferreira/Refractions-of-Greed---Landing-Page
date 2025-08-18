@@ -21,7 +21,7 @@
     --defaultGap: 24px;
 
     /* Miscelânea (eu não sei se essa palavra existe no português.) */
-    --defaultShadow: 0px 2px 8px 0px var(--defaultShadowColor);
+    --defaultShadow: 0px 8px 8px 0px var(--defaultShadowColor);
 }
 
 @font-face {
@@ -81,21 +81,6 @@ button.alternative {
     background: none;
     color: var(--highlightColor);
     font-weight: bolder;
-}
-
-.inLine {
-    margin: 0;
-    padding: 0;
-    justify-content: space-between;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    max-height: fit-content;
-}
-
-.godotLogo {
-    margin-right: 5%;
-    max-width: 64px;
 }
 
 .navDownload,
@@ -208,8 +193,8 @@ nav.nav {
     background-color: white;
     border-radius: var(--uiBorderRadius);
     padding: 8px;
-    top: 16px;
-    right: 16px;
+    top: 12px;
+    right: 12px;
     position: fixed;
     z-index: 5;
 }
@@ -219,7 +204,7 @@ nav a {
     color: black;
     font-size: small;
     padding: var(--defaultPadding);
-    margin: 4px;
+    margin: -4px;
     -webkit-user-select: none;
     user-select: none;
 }
@@ -338,7 +323,7 @@ footer {
 
 div.text {
     margin: auto;
-    width: 85%;
+    width: 50%;
     min-height: 170px;
     font-size: 16px;
     border-radius: 16px;
@@ -416,6 +401,10 @@ div.dotsContainer:hover {
     div.textToImage {
         flex-direction: column;
         align-items: flex-start;
+    }
+
+    div.text {
+        width: 90%;
     }
 }
 
