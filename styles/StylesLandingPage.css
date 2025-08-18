@@ -16,7 +16,7 @@
     margin-top: 0;
     margin-bottom: var(--defaultMargin);
     border-left: 4px solid var(--highlightColor2);
-    padding-left: 0.6rem;
+    padding-left: 0.5rem;
 }
 
 .requirements ul {
@@ -342,21 +342,14 @@ video.slideshowContainer {
     }
 }
 
-@media screen and (min-height: 1080px) {
-    @media screen and (min-width: 1900px) {
-        .johnMain {
-            bottom: 128px;
-            height: 25%;
-        }
-    }
-
+@media screen and (min-height: 1000px) {
     .mainButtons {
         width: 75%;
         margin: auto;
     }
 
     .johnMain {
-        position: absolute;
+        right: 32px;
         bottom: 128px;
         height: 40%;
     }
@@ -366,5 +359,12 @@ video.slideshowContainer {
     div.mechanics,
     div.slideshowContainer {
         width: 65% !important;
+    }
+
+    @media screen and (min-width: 1900px) {
+        .johnMain {
+            bottom: 128px;
+            height: 25%;
+        }
     }
 }
