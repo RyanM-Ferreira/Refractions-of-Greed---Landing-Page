@@ -9,8 +9,9 @@ const navBtns = document.querySelectorAll(".navBtn");
 // Menuzinho Mobile
 function alternateNav() {
     if (!isActive) {
-        document.getElementById("mySidenav").style.height = "70%";
-        document.getElementById("mySidenav").style.top = "0";
+        document.getElementById("mySidenav").style.padding = "24px";
+        document.getElementById("mySidenav").style.height = "50%";
+        document.getElementById("mySidenav").style.top = "4px";
 
         // Fecha o menu quando pressionar algo na NavBar
         navBtns.forEach(btn => {
@@ -18,8 +19,9 @@ function alternateNav() {
         });
     }
     else {
+        document.getElementById("mySidenav").style.padding = "0px";
         document.getElementById("mySidenav").style.height = "0px";
-        document.getElementById("mySidenav").style.top = "-16px";
+        document.getElementById("mySidenav").style.top = "-32px";
     }
 
     isActive = !isActive;

@@ -57,6 +57,7 @@ p {
 .navDownload:hover,
 .downloadBtn:hover {
     animation: gradientMove 0.5s linear infinite;
+    transform: translateY(-2px);
 }
 
 .downloadBtn {
@@ -156,7 +157,7 @@ div.backgroundDiv {
     padding: 0;
     margin-left: auto;
     margin-bottom: auto;
-    max-height: 64px;
+    max-height: 48px;
 }
 
 /* Imagens */
@@ -381,11 +382,11 @@ video.slideshowContainer {
         margin: auto;
     }
 
-    .subDiv{
+    .subDiv {
         max-width: 50%;
     }
 
-    .godotLogo{
+    .godotLogo {
         max-width: 32px;
     }
 
