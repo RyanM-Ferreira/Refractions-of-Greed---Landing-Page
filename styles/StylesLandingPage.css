@@ -381,6 +381,14 @@ video.slideshowContainer {
         margin: auto;
     }
 
+    .subDiv{
+        max-width: 50%;
+    }
+
+    .godotLogo{
+        max-width: 32px;
+    }
+
     .johnMain {
         right: 32px;
         bottom: 128px;
