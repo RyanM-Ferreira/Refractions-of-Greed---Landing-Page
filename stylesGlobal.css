@@ -257,12 +257,13 @@ span {
 
 /* Elementos do Footer */
 footer {
-    background-color: var(--mainBackground);
-    padding: var(--defaultPadding);
-    color: black;
-    font-size: smaller;
+    background: rgba(26, 26, 26, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    padding: 16px;
+    font-size: small;
     text-align: center;
-    margin-top: var(--defaultMargin);
+    margin: 16px;
+    border-radius: var(--uiBorderRadius);
 }
 
 /* Personalizando a ScrollBar */
