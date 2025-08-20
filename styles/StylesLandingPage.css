@@ -112,12 +112,14 @@ div.subDiv {
     background-color: var(--secondaryColor);
     border-radius: var(--uiBorderRadius);
     margin: auto;
+    border: 1px solid var(--secondaryBorder);
 }
 
 div.subDivBackground {
+    background-color: rgba(63, 51, 145, 0.5);
     width: auto;
-    background-color: #3f3391;
     border-radius: var(--uiBorderRadius);
+    border: 1px solid var(--secondaryBorder);
 }
 
 .subDiv p {
@@ -272,6 +274,7 @@ video.slideshowContainer {
 @media (max-width: 1100px) {
     .mainButtons button {
         white-space: nowrap;
+        text-align: center;
     }
 
     .godotLogo {
@@ -383,7 +386,7 @@ video.slideshowContainer {
     }
 
     .subDiv {
-        max-width: 50%;
+        max-width: 45%;
     }
 
     .godotLogo {

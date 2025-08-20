@@ -1,14 +1,25 @@
 /* Variáveis */
 :root {
-    /* Cores */
-    --backgroundColor: #211A4E;
-    --darkerBackgroundColor: #18123a;
+    /* Cores de Destaque */
     --highlightColor: #6f4bd1;
     --highlightColor2: #235cd4;
-    --blackBackground: #111;
-    --mainBackground: white;
-    --windowBackground: #312864;
-    --secondaryColor: #322874;
+
+    /* Cores */
+    --backgroundColor: rgba(33, 26, 78);
+    --darkerBackgroundColor: rgba(24, 18, 58, 0.75);
+    --mainBackground: rgba(255, 255, 255, 0.75);
+    --windowBackground: rgba(49, 40, 100, 0.75);
+    --secondaryColor: rgba(50, 40, 116, 0.75);
+    --blackBackground: rgba(26, 26, 26, 0.75);
+
+    /* Bordas para as cores */
+    --backgroundBorder: rgb(52, 41, 122);
+    --darkerBackgroundBorder: rgba(39, 30, 92, 0.5);
+    --mainBackgroundBorder: rgba(255, 255, 255, 0.5);
+    --windowBackgroundBorder: rgba(77, 61, 167, 0.5);
+    --secondaryBorder: rgba(83, 68, 182, 0.5);
+    --blackBackgroundBorder: rgba(59, 59, 59, 0.5);
+
     --defaultShadowColor: rgba(0, 0, 0, 0.25);
 
     /* Tamanhos */
@@ -21,7 +32,7 @@
     --defaultGap: 24px;
 
     /* Miscelânea (eu não sei se essa palavra existe no português.) */
-    --defaultShadow: 0px 8px 8px 0px var(--defaultShadowColor);
+    --defaultShadow: 0px 2px 8px 0px var(--defaultShadowColor);
 }
 
 @font-face {
@@ -186,22 +197,27 @@ button,
     box-shadow: var(--defaultShadow);
 }
 
+.AeroTheme {
+    -webkit-backdrop-filter: blur(12px) saturate(150%);
+    backdrop-filter: blur(12px) saturate(150%);
+}
+
 /* Elementos da NavBar */
 nav.nav {
     position: fixed;
     top: 8px;
     right: 8px;
     display: flex;
-    background: white;
     border-radius: var(--uiBorderRadius);
     padding: 8px;
     z-index: 1000;
+    background: rgba(26, 26, 26, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.25);
 }
 
 /* Links */
 nav.nav .navBtn {
     cursor: pointer;
-    color: var(--highlightColor);
     text-decoration: none;
     padding: 8px;
     border-radius: var(--buttonBorderRadius);
@@ -278,6 +294,7 @@ footer {
     display: none;
     border-radius: var(--uiBorderRadius);
     background: var(--darkerBackgroundColor);
+    border: 1px solid var(--darkerBackgroundBorder);
     z-index: 20;
 }
 
@@ -322,7 +339,7 @@ footer {
 
 div.text {
     margin: auto;
-    width: 50%;
+    width: 75%;
     min-height: 170px;
     font-size: 16px;
     border-radius: 16px;
@@ -366,7 +383,8 @@ div.dotsContainer:hover {
 
     nav.nav {
         height: 0px;
-        background-color: var(--blackBackground);
+        background: rgba(26, 26, 26, 0.5);
+        border: 1px solid rgba(255, 255, 255, 0.25);
         transition: 0.75s;
         flex-direction: column;
         justify-content: flex-end;
@@ -379,7 +397,7 @@ div.dotsContainer:hover {
 
     .nav a {
         padding: 16px;
-        color: white;
+        color: white !important;
     }
 
     div.textToImage {
