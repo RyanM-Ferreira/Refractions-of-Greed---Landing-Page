@@ -9,6 +9,7 @@
     padding: var(--defaultDivPadding);
     margin-top: 16px;
     text-align: left;
+    border: 1px solid var(--darkerBackgroundBorder);
 }
 
 .requirements h3 {
@@ -220,6 +221,7 @@ video.slideshowContainer {
     padding: var(--defaultPadding);
     text-align: center;
     transition: transform 0.3s ease, filter 0.3s ease;
+    border: 1px solid var(--darkerBackgroundBorder);
 }
 
 .sideVideos {
@@ -233,6 +235,8 @@ video.slideshowContainer {
 .videoCard,
 .mainVideo {
     transition: transform 0.3s ease, filter 0.3s ease;
+    border: 1px solid var(--darkerBackgroundBorder);
+
 }
 
 .videoCard:hover,

@@ -9,7 +9,7 @@
     --darkerBackgroundColor: rgba(24, 18, 58, 0.75);
     --mainBackground: rgba(255, 255, 255, 0.75);
     --windowBackground: rgba(49, 40, 100, 0.75);
-    --secondaryColor: rgba(50, 40, 116, 0.75);
+    --secondaryColor: rgba(50, 40, 116, 0.5);
     --blackBackground: rgba(26, 26, 26, 0.75);
 
     /* Bordas para as cores */
@@ -211,7 +211,7 @@ nav.nav {
     border-radius: var(--uiBorderRadius);
     padding: 8px;
     z-index: 1000;
-    background: rgba(26, 26, 26, 0.75);
+    background: rgba(26, 26, 26, 0.5);
     border: 1px solid rgba(255, 255, 255, 0.25);
 }
 
