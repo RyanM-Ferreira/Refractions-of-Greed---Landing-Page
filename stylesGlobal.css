@@ -68,6 +68,10 @@ h1 {
     font-weight: bolder;
 }
 
+h6 {
+    display: none;
+}
+
 p {
     text-align: justify;
 }
@@ -379,6 +383,10 @@ div.dotsContainer:hover {
 @media (max-width: 900px) {
     .menuIcon {
         display: block;
+    }
+
+    footer {
+        width: 90%;
     }
 
     nav.nav {

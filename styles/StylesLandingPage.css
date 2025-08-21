@@ -27,13 +27,13 @@
 
 /* Título e Textos. */
 h1,
-h2 {
-    color: var(--highlightColor2);
+h2,
+h4 {
+    color: var(--highlightColor);
 }
 
-h4,
 h3 {
-    color: var(--highlightColor);
+    color: var(--highlightColor2);
 }
 
 p {
