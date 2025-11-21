@@ -383,7 +383,7 @@ video.slideshowContainer {
     }
 }
 
-@media screen and (min-height: 1000px) {
+@media screen and (min-height: 900px) {
     .mainButtons {
         width: 75%;
         margin: auto;
@@ -408,12 +408,5 @@ video.slideshowContainer {
     div.mechanics,
     div.slideshowContainer {
         width: 65% !important;
-    }
-
-    @media screen and (min-width: 1900px) {
-        .johnMain {
-            bottom: 128px;
-            height: 25%;
-        }
     }
 }
